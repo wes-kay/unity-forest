@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 646af4431d4a9aa40b86903bf91b12ba
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 360770
+  packageName: Master Inventory Engine Pro - Crafting/Loot/Trade/Skills/HotBar
+  packageVersion: 1.09
+  assetPath: Assets/SoftKitty/InventoryEngine/Resources/InventoryEngine/ClickEffect.prefab
+  uploadId: 902256

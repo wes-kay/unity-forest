@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bbd88cae172b0a3438f2315303612c04
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 360770
+  packageName: Master Inventory Engine Pro - Crafting/Loot/Trade/Skills/HotBar
+  packageVersion: 1.09
+  assetPath: Assets/SoftKitty/InventoryEngine/ExampleScene/Prefabs/PlayerInventory.prefab
+  uploadId: 902256

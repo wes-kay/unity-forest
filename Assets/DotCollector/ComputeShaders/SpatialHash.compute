@@ -1,0 +1,65 @@
+// SpatialHash.compute
+// -------------------
+// TWO kernels — call them in order each frame from DotSystemManager:
+//   1. ClearHash  — zeroes all slots (dispatch: ceil(GRID_W*GRID_H*SLOTS / 64), 1, 1)
+//   2. BuildHash  — inserts alive dot indices  (dispatch: ceil(_DotCount / 64), 1, 1)
+//
+// Grid: 64x64 cells over the spawn area. Each cell holds up to SLOTS=8 dot indices.
+// Flat index: (cellY * GRID_W + cellX) * SLOTS + slot
+
+#pragma kernel ClearHash
+#pragma kernel BuildHash
+
+#define GRID_W  64
+#define GRID_H  64
+#define SLOTS   8
+#define EMPTY   0xFFFFFFFF
+
+struct DotState
+{
+    float2 position;
+    float  scale;
+    float  maxScale;
+    float  state;
+};
+
+StructuredBuffer<DotState>    _Dots;
+RWStructuredBuffer<uint>      _Hash;
+uint   _DotCount;
+float2 _SpawnHalf;
+
+// ---- Kernel 1: clear -------------------------------------------------------
+[numthreads(64, 1, 1)]
+void ClearHash(uint3 id : SV_DispatchThreadID)
+{
+    uint total = GRID_W * GRID_H * SLOTS;
+    if (id.x < total)
+        _Hash[id.x] = EMPTY;
+}
+
+// ---- Kernel 2: insert ------------------------------------------------------
+[numthreads(64, 1, 1)]
+void BuildHash(uint3 id : SV_DispatchThreadID)
+{
+    uint i = id.x;
+    if (i >= _DotCount) return;
+
+    DotState d = _Dots[i];
+    if (d.state > 0.5) return;   // skip collected/dead
+
+    float cellW = (_SpawnHalf.x * 2.0) / (float)GRID_W;
+    float cellH = (_SpawnHalf.y * 2.0) / (float)GRID_H;
+
+    int2 cell = (int2)floor((d.position + _SpawnHalf) / float2(cellW, cellH));
+    cell = clamp(cell, int2(0,0), int2(GRID_W-1, GRID_H-1));
+
+    uint base = (cell.y * GRID_W + cell.x) * SLOTS;
+
+    for (uint s = 0; s < SLOTS; s++)
+    {
+        uint old;
+        InterlockedCompareExchange(_Hash[base + s], EMPTY, i, old);
+        if (old == EMPTY) return;   // inserted successfully
+    }
+    // cell full — dot silently skipped this frame
+}

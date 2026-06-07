@@ -1,0 +1,4 @@
+View the official Master Inventory Engine documentation at:
+https://www.soft-kitty.com/
+For feedback, questions, bug report, feature request, please post in:
+https://github.com/blakeseow-cloud/Soft-Kitty-Documentation/discussions

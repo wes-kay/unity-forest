@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bda8b5e8adb253c4dac55e8d24237df6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 360770
+  packageName: Master Inventory Engine Pro - Crafting/Loot/Trade/Skills/HotBar
+  packageVersion: 1.09
+  assetPath: Assets/SoftKitty/InventoryEngine/ExampleScene/Prefabs/MerchantNpc.prefab
+  uploadId: 902256

@@ -1,0 +1,77 @@
+// VacuumCollect.compute
+// ---------------------
+// Kernel: VacuumCollect  (numthreads 64,1,1)
+//
+// Simple brute-force scan — one thread per dot.
+// Dots within _Radius of _CursorPos are pulled toward it each frame.
+// Once they arrive (distance < 0.05) they are marked collected and score incremented.
+//
+// This is MORE RELIABLE than the hash-based approach for the vacuum feel:
+// dots visibly slide toward the cursor which looks great.
+// The hash is still used by SimulateDots for spatial queries.
+//
+// Bind points:
+//   _Dots         RWStructuredBuffer<DotState>
+//   _ScoreBuffer  RWStructuredBuffer<int>       [0] = frame collect count
+//   _CursorPos    float2                        world-space cursor XY
+//   _Radius       float                         vacuum radius (world units)
+//   _PullSpeed    float                         units/second to move toward cursor
+//   _DeltaTime    float
+//   _DotCount     uint
+
+#pragma kernel VacuumCollect
+
+struct DotState
+{
+    float2 position;
+    float  scale;
+    float  maxScale;
+    float  state;   // 0=alive  1=being pulled  2=collected/dead
+};
+
+RWStructuredBuffer<DotState>  _Dots;
+RWStructuredBuffer<int>       _ScoreBuffer;
+float2 _CursorPos;
+float  _Radius;
+float  _PullSpeed;
+float  _DeltaTime;
+uint   _DotCount;
+
+[numthreads(64, 1, 1)]
+void VacuumCollect(uint3 id : SV_DispatchThreadID)
+{
+    uint i = id.x;
+    if (i >= _DotCount) return;
+
+    DotState d = _Dots[i];
+    if (d.state >= 1.5) return;   // already collected/dead, skip
+
+    float2 toMouse = _CursorPos - d.position;
+    float  dist    = length(toMouse);
+
+    if (dist > _Radius) return;   // outside vacuum radius
+
+    // Mark as being pulled (changes colour to cyan)
+    d.state = 1.0;
+
+    // Move toward cursor — faster when closer (quadratic ease)
+    float speedMult = 1.0 - saturate(dist / _Radius);   // 0 at edge, 1 at centre
+    float speed     = _PullSpeed * (0.3 + 0.7 * speedMult * speedMult);
+    float step      = speed * _DeltaTime;
+
+    if (dist < step || dist < 0.05)
+    {
+        // Arrived — collect it
+        d.position = _CursorPos;
+        d.state    = 2.0;
+        d.scale    = 0.0;
+        InterlockedAdd(_ScoreBuffer[0], 1);
+    }
+    else
+    {
+        // Move toward cursor
+        d.position += normalize(toMouse) * step;
+    }
+
+    _Dots[i] = d;
+}

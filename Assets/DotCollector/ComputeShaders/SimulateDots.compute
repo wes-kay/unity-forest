@@ -1,0 +1,65 @@
+// SimulateDots.compute
+// --------------------
+// Kernel: SimulateDots   (numthreads 64,1,1)
+//
+// Each thread handles one dot slot.
+// - Grows dot.scale toward dot.maxScale at _GrowthRate world-units/second.
+// - Applies gentle sinusoidal drift so dots feel alive.
+// - Skips collected/dead dots (state != 0).
+//
+// Bind points:
+//   _Dots       RWStructuredBuffer<DotState>  — main dot buffer
+//   _DotCount   int                           — active dot count
+//   _DeltaTime  float                         — Time.deltaTime
+//   _GrowthRate float                         — UpgradeManager.GrowthRate
+//   _Time       float                         — Time.time (for drift variation)
+
+#pragma kernel SimulateDots
+
+struct DotState
+{
+    float2 position;
+    float  scale;
+    float  maxScale;
+    float  state;   // 0=alive 1=collected 2=dead
+};
+
+RWStructuredBuffer<DotState> _Dots;
+uint  _DotCount;
+float _DeltaTime;
+float _GrowthRate;
+float _Time;
+
+// Drift speed (world units / second). Small so dots wander gently.
+static const float DRIFT_SPEED = 0.015;
+
+[numthreads(64, 1, 1)]
+void SimulateDots(uint3 id : SV_DispatchThreadID)
+{
+    uint i = id.x;
+    if (i >= _DotCount) return;
+
+    DotState d = _Dots[i];
+
+    // Only simulate alive dots
+    if (d.state > 0.5) return;
+
+    // ---- Growth --------------------------------------------------------
+    // Grows from MinDotSize toward maxScale. Slows as it approaches target
+    // (lerp-style softening) so large dots feel heavier.
+    float remaining = d.maxScale - d.scale;
+    float grow = _GrowthRate * _DeltaTime * saturate(remaining / d.maxScale + 0.2);
+    d.scale = min(d.scale + grow, d.maxScale);
+
+    // ---- Drift ---------------------------------------------------------
+    // Each dot drifts on its own phase (seeded by index) so they don't
+    // all move in sync. Amplitude shrinks once the dot is near full size
+    // (big dots are heavier, move less).
+    float phase = _Time + (float)i * 0.137;
+    float sizeFactor = 1.0 - saturate(d.scale / d.maxScale);
+    float driftAmt = DRIFT_SPEED * (0.3 + 0.7 * sizeFactor);
+    d.position.x += sin(phase)         * driftAmt * _DeltaTime;
+    d.position.y += cos(phase * 1.317) * driftAmt * _DeltaTime;
+
+    _Dots[i] = d;
+}

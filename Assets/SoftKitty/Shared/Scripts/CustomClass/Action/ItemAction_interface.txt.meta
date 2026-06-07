@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1355d16646d690446abf0e6bea74bc7c
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 360770
+  packageName: Master Inventory Engine Pro - Crafting/Loot/Trade/Skills/HotBar
+  packageVersion: 1.09
+  assetPath: Assets/SoftKitty/Shared/Scripts/CustomClass/Action/ItemAction_interface.txt
+  uploadId: 902256

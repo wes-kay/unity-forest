@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b90e4860899e04049ac4fd217f23968d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 360770
+  packageName: Master Inventory Engine Pro - Crafting/Loot/Trade/Skills/HotBar
+  packageVersion: 1.09
+  assetPath: Assets/SoftKitty/InventoryEngine/Resources/InventoryEngine/UiWindows/NpcInventory.prefab
+  uploadId: 902256
