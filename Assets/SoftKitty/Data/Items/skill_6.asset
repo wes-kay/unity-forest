@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7afa098d3023024884b86d0c23e14fd, type: 3}
+  m_Name: skill_6
+  m_EditorClassIdentifier: Assembly-CSharp::SoftKitty.InventoryEngine.ItemScriptableObject
+  mItem:
+    uid: skill_6
+    name: Skill 6
+    description: Example Skill.
+    type: 4
+    icon: {fileID: 2800000, guid: a61c35fcc4d7e424fac6acc73b9a2ce0, type: 3}
+    iconLoadMethod: 0
+    iconPath: 
+    quality: 0
+    tradeable: 1
+    deletable: 0
+    useable: 1
+    consumable: 0
+    visible: 1
+    price: 500
+    currency: 1
+    maxiumStack: 1
+    upgradeLevel: 0
+    weight: 0
+    dropRates: 0
+    favorite: 0
+    attributes:
+    - uid: cd
+      stringValue: false
+      floatValue: 12
+      locked: 0
+      randomChange: 100
+      isFixed: 1
+      minValue: 12
+      maxValue: 12
+      mAttributeSetting:
+        rid: -2
+    - uid: dmg
+      stringValue: false
+      floatValue: 15
+      locked: 0
+      randomChange: 100
+      isFixed: 1
+      minValue: 15
+      maxValue: 15
+      mAttributeSetting:
+        rid: -2
+    - uid: delay
+      stringValue: false
+      floatValue: 0.3
+      locked: 0
+      randomChange: 100
+      isFixed: 1
+      minValue: 0.3
+      maxValue: 0.3
+      mAttributeSetting:
+        rid: -2
+    - uid: spcost
+      stringValue: false
+      floatValue: 20
+      locked: 0
+      randomChange: 100
+      isFixed: 1
+      minValue: 20
+      maxValue: 20
+      mAttributeSetting:
+        rid: -2
+    maximumRandomAttributes: 5
+    enchantments: 
+    craftMaterials: []
+    actions:
+    - Skill_6
+    tags:
+    - Mage
+    customData: []
+    restrictionKey: sp
+    restrictionValue: 20
+    socketingSlots: 0
+    socketedItems: 
+    socketingTag: []
+    fold: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }

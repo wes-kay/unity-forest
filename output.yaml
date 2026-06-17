@@ -1,0 +1,2797 @@
+  AttributeList:
+  - uid: strn
+    name: Strength
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: strn
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: endu
+    name: Endurance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: endu
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cons
+    name: Constitution
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cons
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: agil
+    name: Agility
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: agil
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: dext
+    name: Dexterity
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: dext
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: refl
+    name: Reflexes
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: refl
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: perc
+    name: Perception
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: perc
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: memo
+    name: Memory
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: memo
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cvit
+    name: Current Vitality
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cvit
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mvit
+    name: Maximum Vitality
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mvit
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: csta
+    name: Current Stamina
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: csta
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: msta
+    name: Maximum Stamina
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: msta
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cwil
+    name: Current Willpower
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cwil
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mwil
+    name: Maximum Willpower
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mwil
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cfoc
+    name: Current Focus
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cfoc
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mfoc
+    name: Maximum Focus
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mfoc
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cbld
+    name: Current Blood
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cbld
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mbld
+    name: Maximum Blood
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mbld
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: csan
+    name: Current Sanity
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: csan
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: msan
+    name: Maximum Sanity
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: msan
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cmor
+    name: Current Morale
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cmor
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mmor
+    name: Maximum Morale
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mmor
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: chng
+    name: Current Hunger
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: chng
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mhng
+    name: Maximum Hunger
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mhng
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cthr
+    name: Current Thirst
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cthr
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mthr
+    name: Maximum Thirst
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mthr
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cfat
+    name: Current Fatigue
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cfat
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mfat
+    name: Maximum Fatigue
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mfat
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cexp
+    name: Current Exposure
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cexp
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mexp
+    name: Maximum Exposure
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mexp
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cwrk
+    name: Current Warmth
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cwrk
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mwrk
+    name: Maximum Warmth
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mwrk
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cbur
+    name: Current Burden
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cbur
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mbur
+    name: Maximum Burden
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mbur
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: ched
+    name: Current Head Health
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: ched
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mhed
+    name: Maximum Head Health
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mhed
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: ctor
+    name: Current Torso Health
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: ctor
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mtor
+    name: Maximum Torso Health
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mtor
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: clar
+    name: Current Left Arm Health
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: clar
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mlar
+    name: Maximum Left Arm Health
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mlar
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: crar
+    name: Current Right Arm Health
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: crar
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mrar
+    name: Maximum Right Arm Health
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mrar
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cllg
+    name: Current Left Leg Health
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cllg
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mllg
+    name: Maximum Left Leg Health
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mllg
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: crlg
+    name: Current Right Leg Health
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: crlg
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mrlg
+    name: Maximum Right Leg Health
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mrlg
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cpai
+    name: Current Pain
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cpai
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mpai
+    name: Maximum Pain
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mpai
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cinf
+    name: Current Infection
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cinf
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: minf
+    name: Maximum Infection
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: minf
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: ccor
+    name: Current Corruption
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: ccor
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mcor
+    name: Maximum Corruption
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mcor
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cfvr
+    name: Current Fever
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cfvr
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mfvr
+    name: Maximum Fever
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mfvr
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cstr
+    name: Current Stress
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cstr
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mstr
+    name: Maximum Stress
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mstr
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cble
+    name: Current Bleeding
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cble
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mble
+    name: Maximum Bleeding
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mble
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cven
+    name: Current Venom
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cven
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mven
+    name: Maximum Venom
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mven
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: ccur
+    name: Current Curse
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: ccur
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mcur
+    name: Maximum Curse
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mcur
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cmad
+    name: Current Madness
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cmad
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mmad
+    name: Maximum Madness
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mmad
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cmut
+    name: Current Mutation
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cmut
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mmut
+    name: Maximum Mutation
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mmut
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cpos
+    name: Current Possession
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cpos
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mpos
+    name: Maximum Possession
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mpos
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: pres
+    name: Pain Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: pres
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: ires
+    name: Infection Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: ires
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: corr
+    name: Corruption Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: corr
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: sres
+    name: Stress Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: sres
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: fres
+    name: Fear Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: fres
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mres
+    name: Madness Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mres
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: bres
+    name: Bleeding Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: bres
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: vres
+    name: Venom Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: vres
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: dres
+    name: Disease Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: dres
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cold
+    name: Cold Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cold
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: heat
+    name: Heat Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: heat
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: firs
+    name: Fire Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: firs
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: ices
+    name: Frost Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: ices
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: shrs
+    name: Shadow Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: shrs
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: sors
+    name: Soul Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: sors
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cars
+    name: Chaos Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cars
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: hers
+    name: Hex Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: hers
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: kres
+    name: Knockdown Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: kres
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: stun
+    name: Stun Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: stun
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: tors
+    name: Torture Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: tors
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: poss
+    name: Possession Resistance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: poss
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cfai
+    name: Current Faith
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cfai
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mfai
+    name: Maximum Faith
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mfai
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cher
+    name: Current Heresy
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cher
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mher
+    name: Maximum Heresy
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mher
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cdar
+    name: Current Dark Insight
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cdar
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mdar
+    name: Maximum Dark Insight
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mdar
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: armr
+    name: Armor
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: armr
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: evas
+    name: Evasion
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: evas
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: bloc
+    name: Block Chance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: bloc
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: crit
+    name: Critical Chance
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: crit
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: crdm
+    name: Critical Damage
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: crdm
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: accu
+    name: Accuracy
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: accu
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: move
+    name: Movement Speed
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: move
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: init
+    name: Initiative
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: init
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: heal
+    name: Healing Rate
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: heal
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: regn
+    name: Vitality Regeneration
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: regn
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: carr
+    name: Carry Capacity
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: carr
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: swrd
+    name: Swordsmanship
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: swrd
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: axem
+    name: Axe Mastery
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: axem
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: spea
+    name: Spear Mastery
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: spea
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mace
+    name: Mace Mastery
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mace
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: dagg
+    name: Dagger Mastery
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: dagg
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: arch
+    name: Archery
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: arch
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: xbow
+    name: Crossbows
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: xbow
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: thrw
+    name: Throwing
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: thrw
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: unar
+    name: Unarmed Combat
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: unar
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: parr
+    name: Parrying
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: parr
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: dodg
+    name: Dodging
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: dodg
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: tact
+    name: Tactics
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: tact
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: shld
+    name: Shield Use
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: shld
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: dual
+    name: Dual Wielding
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: dual
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: exec
+    name: Execution
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: exec
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: tort
+    name: Torture
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: tort
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: inti
+    name: Intimidation
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: inti
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: fish
+    name: Fishing
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: fish
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: hunt
+    name: Hunting
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: hunt
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: trap
+    name: Trapping
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: trap
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: skin
+    name: Skinning
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: skin
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: butc
+    name: Butchery
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: butc
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: trac
+    name: Tracking
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: trac
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: fora
+    name: Foraging
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: fora
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: camp
+    name: Camping
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: camp
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: navi
+    name: Navigation
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: navi
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: swim
+    name: Swimming
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: swim
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: clim
+    name: Climbing
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: clim
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: surv
+    name: Survival
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: surv
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: scav
+    name: Scavenging
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: scav
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: corp
+    name: Corpse Harvesting
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: corp
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mine
+    name: Mining
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mine
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: lumb
+    name: Lumberjacking
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: lumb
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: harv
+    name: Harvesting
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: harv
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: herb
+    name: Herbalism
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: herb
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: bldh
+    name: Blood Harvesting
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: bldh
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: bone
+    name: Bone Gathering
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: bone
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: reli
+    name: Relic Hunting
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: reli
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: blks
+    name: Blacksmithing
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: blks
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: wpsm
+    name: Weaponsmithing
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: wpsm
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: arsm
+    name: Armorsmithing
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: arsm
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: tail
+    name: Tailoring
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: tail
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: leat
+    name: Leatherworking
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: leat
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: bons
+    name: Bonesmithing
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: bons
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: fles
+    name: Fleshcrafting
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: fles
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: alch
+    name: Alchemy
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: alch
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: pois
+    name: Poisoncraft
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: pois
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: trmk
+    name: Trap Making
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: trmk
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: rune
+    name: Runecrafting
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: rune
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: ench
+    name: Enchanting
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: ench
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: engi
+    name: Engineering
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: engi
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: faid
+    name: First Aid
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: faid
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: surg
+    name: Surgery
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: surg
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: anat
+    name: Anatomy
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: anat
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: diag
+    name: Diagnosis
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: diag
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: toxi
+    name: Toxicology
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: toxi
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: emba
+    name: Embalming
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: emba
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: auto
+    name: Autopsy
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: auto
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: ampu
+    name: Amputation
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: ampu
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: read
+    name: Reading
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: read
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: writ
+    name: Writing
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: writ
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: rese
+    name: Research
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: rese
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: inve
+    name: Investigation
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: inve
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: hist
+    name: History
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: hist
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: laws
+    name: Law
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: laws
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: theo
+    name: Theology
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: theo
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: occu
+    name: Occultism
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: occu
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: demo
+    name: Demonology
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: demo
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: necr
+    name: Necrology
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: necr
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: astr
+    name: Astrology
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: astr
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: ritu
+    name: Ritual Lore
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: ritu
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mons
+    name: Monster Lore
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mons
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: pers
+    name: Persuasion
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: pers
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: nego
+    name: Negotiation
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: nego
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: lead
+    name: Leadership
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: lead
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: dece
+    name: Deception
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: dece
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: etiq
+    name: Etiquette
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: etiq
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: inte
+    name: Interrogation
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: inte
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: comm
+    name: Command
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: comm
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: fana
+    name: Fanaticism
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: fana
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: stea
+    name: Stealth
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: stea
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: pick
+    name: Pickpocketing
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: pick
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: lock
+    name: Lockpicking
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: lock
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: forg
+    name: Forgery
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: forg
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: espi
+    name: Espionage
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: espi
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: saba
+    name: Sabotage
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: saba
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: assa
+    name: Assassination
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: assa
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: smug
+    name: Smuggling
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: smug
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: trad
+    name: Trading
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: trad
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: appr
+    name: Appraisal
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: appr
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: bart
+    name: Bartering
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: bart
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: logi
+    name: Logistics
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: logi
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: fait
+    name: Faith
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: fait
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: pray
+    name: Prayer
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: pray
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: medi
+    name: Meditation
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: medi
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: exor
+    name: Exorcism
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: exor
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: bles
+    name: Blessing
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: bles
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: curs
+    name: Cursing
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: curs
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: sacr
+    name: Sacrifice
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: sacr
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: arca
+    name: Arcane Knowledge
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: arca
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: fire
+    name: Fire Magic
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: fire
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: icem
+    name: Ice Magic
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: icem
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: blod
+    name: Blood Magic
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: blod
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: necm
+    name: Necromancy
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: necm
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: summ
+    name: Summoning
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: summ
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: illu
+    name: Illusion
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: illu
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: divi
+    name: Divination
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: divi
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: shad
+    name: Shadow Magic
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: shad
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: spir
+    name: Spirit Binding
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: spir
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: hexc
+    name: Hexcraft
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: hexc
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: plag
+    name: Plaguecraft
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: plag
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: soul
+    name: Soul Manipulation
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: soul
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: dark
+    name: Dark Insight
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: dark
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: drea
+    name: Dreamwalking
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: drea
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: void
+    name: Void Affinity
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: void
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: chao
+    name: Chaos Attunement
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: chao
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: grav
+    name: Grave Digging
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: grav
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: mort
+    name: Mortuary Work
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: mort
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: buri
+    name: Burial Rites
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: buri
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: pilg
+    name: Pilgrimage
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: pilg
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: vigi
+    name: Vigil Keeping
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: vigi
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: here
+    name: Heresy Detection
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: here
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: cann
+    name: Cannibalism
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: cann
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: blst
+    name: Bloodletting
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: blst
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: muta
+    name: Mutation Control
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: muta
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: rean
+    name: Reanimation
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: rean
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1
+  - uid: obse
+    name: Obsession
+    stringValue: 0
+    upgradeIncrement: 0
+    coreStats: 1
+    visible: 1
+    visibleInStatsPanel: 1
+    displayFormat: 1
+    suffixes: obse
+    compareInfo: 1
+    defaultValue: 0
+    fold: 1

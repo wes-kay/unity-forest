@@ -1,0 +1,26 @@
+{
+    "_fileType": {
+        "serializedVersion": "2"
+    },
+    "questId": "QST_ASH_001",
+    "title": "Ashfall's Debt",
+    "description": "The Ashen Wastes demand a tithe. Three of the fallen must return to the pyre, or the ash will claim the living.",
+    "completedDescription": "The pyre burns bright. The ash settles, if only for a time.",
+    "failedDescription": "The ash remembers those who fled their duty. It will come for the living next.",
+    "giverEntityUid": "NPC_ASH_PRIEST_01",
+    "targetSceneName": "Ashwastes_Camp",
+    "conditions": [
+        {
+            "type": "KillCondition",
+            "targetEntityUid": "MON_ASH_WYRM",
+            "requiredProgress": 3
+        },
+        {
+            "type": "CollectCondition",
+            "itemUid": "ITEM_BURNING_COAL",
+            "requiredProgress": 5
+        }
+    ],
+    "rewardEntityUid": "CHAR_ASH_KNIGHT_01",
+    "rewardXp": 150
+}

@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7afa098d3023024884b86d0c23e14fd, type: 3}
+  m_Name: guard_helmet
+  m_EditorClassIdentifier: Assembly-CSharp::SoftKitty.InventoryEngine.ItemScriptableObject
+  mItem:
+    uid: guard_helmet
+    name: Guard's Helmet
+    description: Metal helmet with good protection.
+    type: 1
+    icon: {fileID: 2800000, guid: 32b3534aa4ed30f4a98c9091ae325ba4, type: 3}
+    iconLoadMethod: 0
+    iconPath: 
+    quality: 1
+    tradeable: 1
+    deletable: 1
+    useable: 1
+    consumable: 0
+    visible: 1
+    price: 500
+    currency: 0
+    maxiumStack: 1
+    upgradeLevel: 0
+    weight: 1.2
+    dropRates: 4
+    favorite: 0
+    attributes:
+    - uid: def
+      stringValue: false
+      floatValue: 15
+      locked: 0
+      randomChange: 100
+      isFixed: 1
+      minValue: 15
+      maxValue: 15
+      mAttributeSetting:
+        rid: -2
+    - uid: resist
+      stringValue: false
+      floatValue: 5
+      locked: 0
+      randomChange: 100
+      isFixed: 0
+      minValue: 5
+      maxValue: 15
+      mAttributeSetting:
+        rid: -2
+    maximumRandomAttributes: 1
+    enchantments: 
+    craftMaterials: []
+    actions:
+    - equip
+    tags:
+    - Helmet
+    customData: []
+    restrictionKey: 
+    restrictionValue: 0
+    socketingSlots: 0
+    socketedItems: 
+    socketingTag:
+    - Green
+    - Blue
+    fold: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }

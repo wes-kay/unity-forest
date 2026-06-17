@@ -1,0 +1,316 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c305328e3ac9b4ebeacb5d0d1bbb77, type: 3}
+  m_Name: GameItemObject
+  m_EditorClassIdentifier: Assembly-CSharp::SoftKitty.ItemObject
+  Hash: fec6b20bfb13397099dc14098edeb44a
+  IdManager:
+    idToKey:
+    - id: 0
+      key: Item0
+    - id: 1
+      key: Item1
+    - id: 2
+      key: gold_ore
+    - id: 3
+      key: copper_ore
+    - id: 4
+      key: health_potion(s)
+    - id: 5
+      key: health_potion(l)
+    - id: 6
+      key: energy_potion(s)
+    - id: 7
+      key: energy_potion(l)
+    - id: 8
+      key: lucky_fruit
+    - id: 9
+      key: herbs
+    - id: 10
+      key: silver_ore
+    - id: 11
+      key: oak_log
+    - id: 12
+      key: wolf_skin
+    - id: 13
+      key: bear_skin
+    - id: 14
+      key: wolf_claw
+    - id: 15
+      key: bear_tooth
+    - id: 16
+      key: walnut_log
+    - id: 17
+      key: letter
+    - id: 18
+      key: gift_for_jenny
+    - id: 19
+      key: pass_permit
+    - id: 20
+      key: strange_egg
+    - id: 21
+      key: corn
+    - id: 22
+      key: poison
+    - id: 23
+      key: monster_head
+    - id: 24
+      key: monster_meat
+    - id: 25
+      key: monster_wing
+    - id: 26
+      key: monster_skin
+    - id: 27
+      key: gem
+    - id: 28
+      key: power_stone
+    - id: 29
+      key: ancient_rune
+    - id: 30
+      key: enchantment_recipe
+    - id: 31
+      key: guard_gauntlet
+    - id: 32
+      key: short_sword
+    - id: 33
+      key: long_sword
+    - id: 34
+      key: great_axe
+    - id: 35
+      key: copper_ring
+    - id: 36
+      key: ancient_ring
+    - id: 37
+      key: necklace_of_fire
+    - id: 38
+      key: blue_gem_necklace
+    - id: 39
+      key: red_gem_necklace
+    - id: 40
+      key: leather_armor
+    - id: 41
+      key: plate_armor
+    - id: 42
+      key: leather_boots
+    - id: 43
+      key: guard_boots
+    - id: 44
+      key: dark_hoods
+    - id: 45
+      key: leather_glove
+    - id: 46
+      key: leather_helmet
+    - id: 47
+      key: guard_helmet
+    - id: 48
+      key: buckler
+    - id: 49
+      key: leather_shield
+    - id: 50
+      key: shuriken
+    uiFold: 0
+  SearchText: 
+  SearchType: 0
+  _skinExpand: 0
+  _generalExpand: 0
+  _typeExpand: 1
+  _qualityExpand: 0
+  _currencyExpand: 0
+  _attExpand: 0
+  _attViewExpand: 0
+  _entExpand: 0
+  _craftExpand: 0
+  _upgradeExpand: 0
+  _itemExpand: 1
+  _socketingExpand: 0
+  _lootPackExpand: 0
+  _newAttSel: 0
+  lootPacks: []
+  itemTypes:
+  - name: Consumable
+    color: {r: 1, g: 1, b: 1, a: 1}
+    visible: 1
+  itemQuality:
+  - name: Default Quality0
+    color: {r: 1, g: 1, b: 1, a: 1}
+    visible: 1
+  clickSettings: []
+  itemAttributeObjectHash: 
+  itemEnchantments: []
+  currencies:
+  - name: Default Currency
+    icon: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    ExchangeRate: []
+    fold: 1
+  items:
+  - uid: Item0
+    name: Default Item
+    description: No description yet.
+    type: 0
+    icon: {fileID: 0}
+    iconLoadMethod: 0
+    iconPath: 
+    quality: 0
+    tradeable: 1
+    deletable: 1
+    useable: 0
+    consumable: 0
+    visible: 1
+    price: 0
+    currency: 0
+    maxiumStack: 99
+    upgradeLevel: 0
+    weight: 0.1
+    dropRates: 0
+    favorite: 0
+    attributes: []
+    maximumRandomAttributes: 5
+    enchantments: 
+    craftMaterials: []
+    actions: []
+    tags: []
+    customData: []
+    restrictionKey: 
+    restrictionValue: 0
+    socketingSlots: 0
+    socketedItems: 
+    socketingTag: []
+    fold: 0
+  - uid: Item1
+    name: New Item1
+    description: No description yet.
+    type: 0
+    icon: {fileID: 0}
+    iconLoadMethod: 0
+    iconPath: 
+    quality: 0
+    tradeable: 1
+    deletable: 1
+    useable: 0
+    consumable: 0
+    visible: 1
+    price: 0
+    currency: 0
+    maxiumStack: 99
+    upgradeLevel: 0
+    weight: 0.1
+    dropRates: 0
+    favorite: 0
+    attributes: []
+    maximumRandomAttributes: 5
+    enchantments: 
+    craftMaterials: []
+    actions: []
+    tags:
+    - Water
+    customData: []
+    restrictionKey: 
+    restrictionValue: 0
+    socketingSlots: 0
+    socketedItems: 
+    socketingTag: []
+    fold: 1
+  itemScriptableObjects: []
+  DataMode: 0
+  NameAttributeKey: name
+  LevelAttributeKey: lvl
+  XpAttributeKey: xp
+  MaxXpAttributeKey: mxp
+  CoolDownAttributeKey: cd
+  SharedGlobalCoolDown: 0.5
+  SearchFilterMode: 0
+  MergeStacksOnSort: 1
+  AttributeNameColor: {r: 0.17, g: 0.53, b: 0.82, a: 1}
+  UseQualityColorForItemName: 1
+  MerchantStyle: 0
+  HighlightEquipmentSlotWhenHoverItem: 1
+  AllowDropItem: 1
+  CanvasTag: 
+  EnableCrafting: 1
+  CraftingMaterialCategoryID: 0
+  CraftingBlueprintTag: Blueprint
+  PlayerName: Player
+  CraftingTime: 0.5
+  EnhancingMaterials:
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  EnhancingCurrencyType: 0
+  EnhancingCurrencyNeed: 0
+  EnableEnhancing: 1
+  DestroyEquipmentWhenFail: 0
+  DestroyEquipmentWhenFailLevel: 3
+  MaxiumEnhancingLevel: 10
+  EnhancingSuccessCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  EnhancingCategoryID: 0
+  EnhancingTime: 0.5
+  EnableEnhancingGlow: 1
+  EnhancingGlowCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  EnchantingMaterial: {x: 1, y: 1}
+  EnchantingCurrencyType: 0
+  EnchantingCurrencyNeed: 0
+  EnchantmentNumberRange: {x: 1, y: 3}
+  EnableEnchanting: 1
+  RandomEnchantmentsForNewItem: 0
+  EnchantingSuccessRate: 30
+  EnchantingCategoryID: 0
+  EnchantingTime: 0.5
+  EnchantingPrefixesColor: {r: 0.32, g: 0.55, b: 0.18, a: 1}
+  EnchantingSuffxesColor: {r: 0.32, g: 0.55, b: 0.18, a: 1}
+  EnchantingNameColor: {r: 0.32, g: 0.55, b: 0.18, a: 1}
+  EnableSocketing: 1
+  SocketingTagFilter: 
+  SocketingCategoryFilter: 0
+  SocketedCategoryFilter: 0
+  EnableRemoveSocketing: 1
+  RemoveSocketingPrice: 100
+  RemoveSocketingCurrency: 0
+  DestroySocketItemWhenRemove: 0
+  RandomSocketingSlotsNummber: 1
+  MinimalSocketingSlotsNumber: 0
+  MaxmiumSocketingSlotsNumber: 3
+  LockSocketingSlotsByDefault: 1
+  RandomChanceToLockSocketingSlots: 25
+  UnlockSocketingSlotsPrice: 50
+  UnlockSocketingSlotsCurrency: 0
+  PlayerInventoryWindowName: Inventory
+  PlayerEquipWindowName: Equipment
+  MerchantWindowName: Merchant
+  NpcInventoryWindowName: NpcInventory
+  NpcEquipmentWindowName: Equipment
+  StorageWindowName: Storage
+  ForgeWindowName: Forge
+  msgBagFull: Sorry, the bag is full.
+  msgItemUseRestricted: Sorry, you can not use this item because of your {name} is
+    less than {value}.
+  msgItemAssign: Sorry, you can not assign this item here.
+  msgEnhancingFail: Failed! [ <color=#FFA209>{name}</color> ] break into pieces.
+  UiStyle: 1
+  UiScale: 1
+  InventorySlotScale: 1
+  EmptyItemBackColor: {r: 0.33, g: 0.33, b: 0.33, a: 1}
+  ItemSelectedColor: {r: 1, g: 0.28, b: 0, a: 0.4}
+  ItemHoverColor: {r: 1, g: 0.54, b: 0, a: 0.1}
+  FavoriteColor: {r: 1, g: 0.54, b: 0, a: 1}
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7afa098d3023024884b86d0c23e14fd, type: 3}
+  m_Name: knight_sword
+  m_EditorClassIdentifier: Assembly-CSharp::SoftKitty.InventoryEngine.ItemScriptableObject
+  mItem:
+    uid: knight_sword
+    name: Knight's Sword
+    description: Fine heavy sword. {stun}% chance to stun enemy on hit.
+    type: 1
+    icon: {fileID: 2800000, guid: 2ed3c772715ec614d83edd38efbf51c9, type: 3}
+    iconLoadMethod: 0
+    iconPath: 
+    quality: 2
+    tradeable: 1
+    deletable: 1
+    useable: 1
+    consumable: 0
+    visible: 1
+    price: 400
+    currency: 0
+    maxiumStack: 1
+    upgradeLevel: 0
+    weight: 1.5
+    dropRates: 2
+    favorite: 0
+    attributes:
+    - uid: atk
+      stringValue: false
+      floatValue: 20
+      locked: 0
+      randomChange: 100
+      isFixed: 0
+      minValue: 20
+      maxValue: 30
+      mAttributeSetting:
+        rid: -2
+    - uid: crit
+      stringValue: false
+      floatValue: 5
+      locked: 0
+      randomChange: 100
+      isFixed: 0
+      minValue: 5
+      maxValue: 20
+      mAttributeSetting:
+        rid: -2
+    - uid: stun
+      stringValue: false
+      floatValue: 3
+      locked: 0
+      randomChange: 100
+      isFixed: 1
+      minValue: 3
+      maxValue: 3
+      mAttributeSetting:
+        rid: -2
+    maximumRandomAttributes: 1
+    enchantments: 
+    craftMaterials: []
+    actions:
+    - attck_sword
+    - equip
+    tags:
+    - MainHand
+    customData: []
+    restrictionKey: 
+    restrictionValue: 0
+    socketingSlots: 0
+    socketedItems: 
+    socketingTag:
+    - Red
+    - Yellow
+    fold: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }

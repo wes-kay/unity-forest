@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7afa098d3023024884b86d0c23e14fd, type: 3}
+  m_Name: king_sword
+  m_EditorClassIdentifier: Assembly-CSharp::SoftKitty.InventoryEngine.ItemScriptableObject
+  mItem:
+    uid: king_sword
+    name: King's Sword
+    description: Burning sword with ultimate power.  {stun}% chance to stun enemy
+      on hit.
+    type: 1
+    icon: {fileID: 2800000, guid: 36eb3bf59f691dc47ae8087e69bdcc95, type: 3}
+    iconLoadMethod: 0
+    iconPath: 
+    quality: 3
+    tradeable: 1
+    deletable: 1
+    useable: 1
+    consumable: 0
+    visible: 1
+    price: 3000
+    currency: 0
+    maxiumStack: 1
+    upgradeLevel: 0
+    weight: 3
+    dropRates: 1
+    favorite: 0
+    attributes:
+    - uid: atk
+      stringValue: false
+      floatValue: 40
+      locked: 0
+      randomChange: 50
+      isFixed: 0
+      minValue: 40
+      maxValue: 60
+      mAttributeSetting:
+        rid: -2
+    - uid: crit
+      stringValue: false
+      floatValue: 20
+      locked: 0
+      randomChange: 100
+      isFixed: 0
+      minValue: 20
+      maxValue: 40
+      mAttributeSetting:
+        rid: -2
+    - uid: steal
+      stringValue: false
+      floatValue: 5
+      locked: 0
+      randomChange: 40
+      isFixed: 0
+      minValue: 5
+      maxValue: 15
+      mAttributeSetting:
+        rid: -2
+    - uid: stun
+      stringValue: false
+      floatValue: 5
+      locked: 0
+      randomChange: 100
+      isFixed: 1
+      minValue: 5
+      maxValue: 5
+      mAttributeSetting:
+        rid: -2
+    maximumRandomAttributes: 1
+    enchantments: 
+    craftMaterials: []
+    actions:
+    - attck_sword
+    - equip
+    tags:
+    - MainHand
+    - TwoHanded
+    customData:
+    - key: Custom0
+      loadMethod: 0
+      loadPath: 
+      value: {fileID: 0}
+      fold: 0
+    - key: Custom1
+      loadMethod: 0
+      loadPath: 
+      value: {fileID: 0}
+      fold: 0
+    restrictionKey: lvl
+    restrictionValue: 5
+    socketingSlots: 0
+    socketedItems: 
+    socketingTag:
+    - Red
+    - Yellow
+    fold: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }

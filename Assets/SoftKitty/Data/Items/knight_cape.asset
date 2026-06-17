@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7afa098d3023024884b86d0c23e14fd, type: 3}
+  m_Name: knight_cape
+  m_EditorClassIdentifier: Assembly-CSharp::SoftKitty.InventoryEngine.ItemScriptableObject
+  mItem:
+    uid: knight_cape
+    name: Knight's Cape
+    description: Heavy red cape with armor pieces.
+    type: 1
+    icon: {fileID: 2800000, guid: 7555de2df5b8b424e81d7c9c284d4e65, type: 3}
+    iconLoadMethod: 0
+    iconPath: 
+    quality: 3
+    tradeable: 1
+    deletable: 1
+    useable: 1
+    consumable: 0
+    visible: 1
+    price: 900
+    currency: 0
+    maxiumStack: 1
+    upgradeLevel: 0
+    weight: 1.2
+    dropRates: 5
+    favorite: 0
+    attributes:
+    - uid: resist
+      stringValue: false
+      floatValue: 30
+      locked: 0
+      randomChange: 100
+      isFixed: 0
+      minValue: 30
+      maxValue: 50
+      mAttributeSetting:
+        rid: -2
+    - uid: luck
+      stringValue: false
+      floatValue: 15
+      locked: 0
+      randomChange: 100
+      isFixed: 1
+      minValue: 15
+      maxValue: 15
+      mAttributeSetting:
+        rid: -2
+    maximumRandomAttributes: 1
+    enchantments: 
+    craftMaterials: []
+    actions:
+    - equip
+    tags:
+    - Cape
+    customData: []
+    restrictionKey: 
+    restrictionValue: 0
+    socketingSlots: 0
+    socketedItems: 
+    socketingTag:
+    - Green
+    - Blue
+    fold: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
