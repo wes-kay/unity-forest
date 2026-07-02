@@ -55,7 +55,6 @@ namespace SoftKitty.InventoryEngine
             PlayerStateUpdate();
             EnemyStateUpdate();
             Time.timeScale = 0F;
-            
         }
         #endregion
 
@@ -84,6 +83,7 @@ namespace SoftKitty.InventoryEngine
             //SetMonsterLevel(1);
 
             NpcWorker.GetModule<InventoryModule>().GetInventory().RegisterCraftingStateCallback(OnCraftingStateChange);
+  
         }
 
         public void OnCraftingStateChange(CraftingState _state, float _remainTime)

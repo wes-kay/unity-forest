@@ -4,8 +4,6 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 
-namespace SoftKitty.MVP.Title
-{
     public class TitleView : MonoBehaviour
     {
         [Header("Buttons")]
@@ -279,5 +277,4 @@ namespace SoftKitty.MVP.Title
             _canvasGroup.alpha = targetAlpha;
             SetCanvasInteractable(targetAlpha > 0f, targetAlpha > 0f);
         }
-    }
 }

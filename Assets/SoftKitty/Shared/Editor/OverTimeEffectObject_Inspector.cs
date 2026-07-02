@@ -62,7 +62,7 @@ namespace SoftKitty
             EditorUtils.ResetColor();
             EditorUtils.End(0);
 
-            EditorUtils.Document("core/over-time-effects/OverTimeEffectObject");
+            EditorUtils.Document("core/over-time-effects/OverTimeEffectObject", true);
             EditorGUILayout.Separator();
 
             EditorUtils.Save();
@@ -402,6 +402,32 @@ namespace SoftKitty
                                 }
                             }
                         }
+
+#if MASTER_HEALTH_BAR
+                        EditorUtils.IntSlider(ref myTarget.overTimeEffects[i].barEffectType, -1, 2, new GUIContent("Bar Effect Type:"), "", 10, 130);
+                        EditorUtils.ColorField(ref myTarget.overTimeEffects[i].barEffctColor, new GUIContent("Bar Effetc Color:", "The VFX color of this effect in the HealthBar."), 10, 130);
+                        EditorUtils.Toggle(ref myTarget.overTimeEffects[i].endTime, new GUIContent("Is Endtime Visible:"), 10, 130);
+                        if (myTarget.overTimeEffects[i].endTime)
+                        {
+                            EditorUtils.ColorField(ref myTarget.overTimeEffects[i].timeColor, new GUIContent("Endtime Color:", "The color of this endtime."), 30, 130);
+                        }
+                        EditorUtils.Toggle(ref myTarget.overTimeEffects[i].fadeVisible, new GUIContent("Is Fade Effeect Visible:"), 10, 130);
+                        if (myTarget.overTimeEffects[i].fadeVisible)
+                        {
+                            GUILayout.BeginHorizontal();
+                            GUILayout.Space(30);
+                            GUILayout.Label("Icon Fade Type:", GUILayout.Width(130));
+                            GUI.color = Color.white;
+                            myTarget.overTimeEffects[i].fadeType = (OverTimeEffect.FadeType)EditorGUILayout.EnumPopup(myTarget.overTimeEffects[i].fadeType, GUILayout.Width(150));
+                            GUILayout.EndHorizontal();
+                        }
+                        EditorUtils.Toggle(ref myTarget.overTimeEffects[i].flash, new GUIContent("Is Icon Flash:"), 10, 130);
+                        if (myTarget.overTimeEffects[i].flash)
+                        {
+                            EditorUtils.FloatSlider(ref myTarget.overTimeEffects[i].flashThreshold, 1.0f, 10.0f, new GUIContent("Flash Threshold Time:"), "s", 30, 130);
+                        }
+#endif
+
                         GUILayout.EndVertical();
                         GUILayout.Space(27);
                         GUILayout.EndHorizontal();

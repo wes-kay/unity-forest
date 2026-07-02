@@ -38,6 +38,11 @@ MonoBehaviour:
     - Assembly-CSharp
     - Assembly-CSharp-firstpass
     - GaussianSplatting
+    - LeTai.Asset.TranslucentImage
+    - LeTai.Asset.TranslucentImage.Demo
+    - LeTai.Common
+    - LeTai.Paraform.Scaffold
+    - LeTai.TranslucentImage.UniversalRP
     - LeTai.TrueShadow
     - LeTai.TrueShadow.Demo
     - ShapesRuntime

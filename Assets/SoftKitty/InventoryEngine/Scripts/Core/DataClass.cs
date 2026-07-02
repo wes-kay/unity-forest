@@ -540,6 +540,10 @@ namespace SoftKitty.InventoryEngine
         /// </summary>
         public List<Vector2> craftMaterials = new List<Vector2>();
         /// <summary>
+        /// The materials tags required to craft this item.
+        /// </summary>
+        public List<string> craftMaterialTags = new List<string>();
+        /// <summary>
         /// The action string list of this item.
         /// </summary>
         public List<string> actions = new List<string>();
@@ -742,6 +746,8 @@ namespace SoftKitty.InventoryEngine
                 }
                 craftMaterials.Clear();
                 craftMaterials.AddRange(_ref.craftMaterials);
+                craftMaterialTags.Clear();
+                craftMaterialTags.AddRange(_ref.craftMaterialTags);
                 enchantments.Clear();
                 enchantments.AddRange(_ref.enchantments);
                 actions.Clear();
@@ -815,6 +821,8 @@ namespace SoftKitty.InventoryEngine
             }
             _newItem.craftMaterials.Clear();
             _newItem.craftMaterials.AddRange(craftMaterials);
+            _newItem.craftMaterialTags.Clear();
+            _newItem.craftMaterialTags.AddRange(craftMaterialTags);
             _newItem.enchantments.Clear();
             _newItem.enchantments.AddRange(enchantments);
             _newItem.actions.Clear();
@@ -1315,6 +1323,7 @@ namespace SoftKitty.InventoryEngine
             return tags.Contains(_tag.Replace("#1", "").Replace("#2", "").Replace("#3", ""));
         }
 
+         
         public bool isTagsMatchList(List<string> _tags, bool _allMatch)
         {
             foreach (string obj in _tags) {
@@ -2061,6 +2070,8 @@ namespace SoftKitty.InventoryEngine
         public float MaxiumCarryWeight = 1000F;
         public float SellPriceMultiplier = 1F;
         public float BuyPriceMultiplier = 1F;
+        public List<string> OnlyAcceptTags = new List<string>();
+        public List<int> OnlyAcceptCategories = new List<int>();
         public List<Vector3> SpecificPriceMultiplier = new List<Vector3>();
         public bool TradeAllItems = true;
         public List<int> TradeList = new List<int>();

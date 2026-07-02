@@ -1,0 +1,2350 @@
+  - uid: Lia
+    Attributes:
+      - uid: strn
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: endu
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cons
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: agil
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: dext
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: refl
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: perc
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: memo
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cvit
+        stringValue: 0
+        floatValue: 4
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 4
+        maxValue: 4
+        mAttributeSetting:
+          rid: -2
+      - uid: mvit
+        stringValue: 0
+        floatValue: 10
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 10
+        maxValue: 10
+        mAttributeSetting:
+          rid: -2
+      - uid: csta
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: msta
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cwil
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mwil
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cfoc
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mfoc
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cbld
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mbld
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: csan
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: msan
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cmor
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mmor
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: chng
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mhng
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cthr
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mthr
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cfat
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mfat
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cexp
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mexp
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cwrk
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mwrk
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cbur
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mbur
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: ched
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mhed
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: ctor
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mtor
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: clar
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mlar
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: crar
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mrar
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cllg
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mllg
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: crlg
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mrlg
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cpai
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mpai
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cinf
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: minf
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: ccor
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mcor
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cfvr
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mfvr
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cstr
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mstr
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cble
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mble
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cven
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mven
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: ccur
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mcur
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cmad
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mmad
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cmut
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mmut
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cpos
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mpos
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: pres
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: ires
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: corr
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: sres
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: fres
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mres
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: bres
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: vres
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: dres
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cold
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: heat
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: firs
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: ices
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: shrs
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: sors
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cars
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: hers
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: kres
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: stun
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: tors
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: poss
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cfai
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mfai
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cher
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mher
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cdar
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mdar
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: armr
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: evas
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: bloc
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: crit
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: crdm
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: accu
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: move
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: init
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: heal
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: regn
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: carr
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: swrd
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: axem
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: spea
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mace
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: dagg
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: arch
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: xbow
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: thrw
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: unar
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: parr
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: dodg
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: tact
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: shld
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: dual
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: exec
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: tort
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: inti
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: fish
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: hunt
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: trap
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: skin
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: butc
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: trac
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: fora
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: camp
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: navi
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: swim
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: clim
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: surv
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: scav
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: corp
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mine
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: lumb
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: harv
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: herb
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: bldh
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: bone
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: reli
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: blks
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: wpsm
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: arsm
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: tail
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: leat
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: bons
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: fles
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: alch
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: pois
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: trmk
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: rune
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: ench
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: engi
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: faid
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: surg
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: anat
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: diag
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: toxi
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: emba
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: auto
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: ampu
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: read
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: writ
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: rese
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: inve
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: hist
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: laws
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: theo
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: occu
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: demo
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: necr
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: astr
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: ritu
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mons
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: pers
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: nego
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: lead
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: dece
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: etiq
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: inte
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: comm
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: fana
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: stea
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: pick
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: lock
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: forg
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: espi
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: saba
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: assa
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: smug
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: trad
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: appr
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: bart
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: logi
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: fait
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: pray
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: medi
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: exor
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: bles
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: curs
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: sacr
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: arca
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: fire
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: icem
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: blod
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: necm
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: summ
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: illu
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: divi
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: shad
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: spir
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: hexc
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: plag
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: soul
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: dark
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: drea
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: void
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: chao
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: grav
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: mort
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: buri
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: pilg
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: vigi
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: here
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: cann
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: blst
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: muta
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: rean
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+      - uid: obse
+        stringValue: 0
+        floatValue: 0
+        locked: 0
+        randomChange: 100
+        isFixed: 1
+        minValue: 0
+        maxValue: 0
+        mAttributeSetting:
+          rid: -2
+    AttributesUpgradeLevel: 0
+    ApplyTransformDataWhenInstantiate: 1
+    Position: {x: 0, y: 0, z: 0}
+    Forward: {x: 0, y: 0, z: 1}
+    Scale: {x: 1, y: 1, z: 1}
+    Tags: []
+    AvailableForInteraction: 1
+    MultipleInstances: 0
+    CustomFloat: []
+    CustomInt: 
+    CustomBool: 
+    CustomString: []
+    CustomIntList: []
+    CustomIdIntList: []
+    CustomIdFloatList: []
+    Modules:
+      - type: SoftKitty.InventoryEngine.InventoryModule
+        jsonData: '{"entity":{"rid":-2},"InventorySave":[],"Inventory":[{"Name":"Inventory","EntityUid":"Lia","Type":4,"Stacks":[{"Item":{"uid":"","name":"","description":"","type":0,"icon":{"instanceID":0},"iconLoadMethod":0,"iconPath":"","quality":0,"tradeable":true,"deletable":true,"useable":false,"consumable":false,"visible":true,"price":0,"currency":0,"maxiumStack":99,"upgradeLevel":0,"weight":0.10000000149011612,"dropRates":0,"favorite":false,"attributes":[],"maximumRandomAttributes":5,"enchantments":[],"craftMaterials":[],"actions":[],"tags":[],"customData":[],"restrictionKey":"","restrictionValue":0,"socketingSlots":0,"socketedItems":[],"socketingTag":[],"fold":true},"Number":0,"Empty":true,"Fold":true},{"Item":{"uid":"","name":"","description":"","type":0,"icon":{"instanceID":0},"iconLoadMethod":0,"iconPath":"","quality":0,"tradeable":true,"deletable":true,"useable":false,"consumable":false,"visible":true,"price":0,"currency":0,"maxiumStack":99,"upgradeLevel":0,"weight":0.10000000149011612,"dropRates":0,"favorite":false,"attributes":[],"maximumRandomAttributes":5,"enchantments":[],"craftMaterials":[],"actions":[],"tags":[],"customData":[],"restrictionKey":"","restrictionValue":0,"socketingSlots":0,"socketedItems":[],"socketingTag":[],"fold":true},"Number":0,"Empty":true,"Fold":true},{"Item":{"uid":"","name":"","description":"","type":0,"icon":{"instanceID":0},"iconLoadMethod":0,"iconPath":"","quality":0,"tradeable":true,"deletable":true,"useable":false,"consumable":false,"visible":true,"price":0,"currency":0,"maxiumStack":99,"upgradeLevel":0,"weight":0.10000000149011612,"dropRates":0,"favorite":false,"attributes":[],"maximumRandomAttributes":5,"enchantments":[],"craftMaterials":[],"actions":[],"tags":[],"customData":[],"restrictionKey":"","restrictionValue":0,"socketingSlots":0,"socketedItems":[],"socketingTag":[],"fold":true},"Number":0,"Empty":true,"Fold":true},{"Item":{"uid":"","name":"","description":"","type":0,"icon":{"instanceID":0},"iconLoadMethod":0,"iconPath":"","quality":0,"tradeable":true,"deletable":true,"useable":false,"consumable":false,"visible":true,"price":0,"currency":0,"maxiumStack":99,"upgradeLevel":0,"weight":0.10000000149011612,"dropRates":0,"favorite":false,"attributes":[],"maximumRandomAttributes":5,"enchantments":[],"craftMaterials":[],"actions":[],"tags":[],"customData":[],"restrictionKey":"","restrictionValue":0,"socketingSlots":0,"socketedItems":[],"socketingTag":[],"fold":true},"Number":0,"Empty":true,"Fold":true},{"Item":{"uid":"","name":"","description":"","type":0,"icon":{"instanceID":0},"iconLoadMethod":0,"iconPath":"","quality":0,"tradeable":true,"deletable":true,"useable":false,"consumable":false,"visible":true,"price":0,"currency":0,"maxiumStack":99,"upgradeLevel":0,"weight":0.10000000149011612,"dropRates":0,"favorite":false,"attributes":[],"maximumRandomAttributes":5,"enchantments":[],"craftMaterials":[],"actions":[],"tags":[],"customData":[],"restrictionKey":"","restrictionValue":0,"socketingSlots":0,"socketedItems":[],"socketingTag":[],"fold":true},"Number":0,"Empty":true,"Fold":true},{"Item":{"uid":"","name":"","description":"","type":0,"icon":{"instanceID":0},"iconLoadMethod":0,"iconPath":"","quality":0,"tradeable":true,"deletable":true,"useable":false,"consumable":false,"visible":true,"price":0,"currency":0,"maxiumStack":99,"upgradeLevel":0,"weight":0.10000000149011612,"dropRates":0,"favorite":false,"attributes":[],"maximumRandomAttributes":5,"enchantments":[],"craftMaterials":[],"actions":[],"tags":[],"customData":[],"restrictionKey":"","restrictionValue":0,"socketingSlots":0,"socketedItems":[],"socketingTag":[],"fold":true},"Number":0,"Empty":true,"Fold":true},{"Item":{"uid":"","name":"","description":"","type":0,"icon":{"instanceID":0},"iconLoadMethod":0,"iconPath":"","quality":0,"tradeable":true,"deletable":true,"useable":false,"consumable":false,"visible":true,"price":0,"currency":0,"maxiumStack":99,"upgradeLevel":0,"weight":0.10000000149011612,"dropRates":0,"favorite":false,"attributes":[],"maximumRandomAttributes":5,"enchantments":[],"craftMaterials":[],"actions":[],"tags":[],"customData":[],"restrictionKey":"","restrictionValue":0,"socketingSlots":0,"socketedItems":[],"socketingTag":[],"fold":true},"Number":0,"Empty":true,"Fold":true},{"Item":{"uid":"","name":"","description":"","type":0,"icon":{"instanceID":0},"iconLoadMethod":0,"iconPath":"","quality":0,"tradeable":true,"deletable":true,"useable":false,"consumable":false,"visible":true,"price":0,"currency":0,"maxiumStack":99,"upgradeLevel":0,"weight":0.10000000149011612,"dropRates":0,"favorite":false,"attributes":[],"maximumRandomAttributes":5,"enchantments":[],"craftMaterials":[],"actions":[],"tags":[],"customData":[],"restrictionKey":"","restrictionValue":0,"socketingSlots":0,"socketedItems":[],"socketingTag":[],"fold":true},"Number":0,"Empty":true,"Fold":true},{"Item":{"uid":"","name":"","description":"","type":0,"icon":{"instanceID":0},"iconLoadMethod":0,"iconPath":"","quality":0,"tradeable":true,"deletable":true,"useable":false,"consumable":false,"visible":true,"price":0,"currency":0,"maxiumStack":99,"upgradeLevel":0,"weight":0.10000000149011612,"dropRates":0,"favorite":false,"attributes":[],"maximumRandomAttributes":5,"enchantments":[],"craftMaterials":[],"actions":[],"tags":[],"customData":[],"restrictionKey":"","restrictionValue":0,"socketingSlots":0,"socketedItems":[],"socketingTag":[],"fold":true},"Number":0,"Empty":true,"Fold":true},{"Item":{"uid":"","name":"","description":"","type":0,"icon":{"instanceID":0},"iconLoadMethod":0,"iconPath":"","quality":0,"tradeable":true,"deletable":true,"useable":false,"consumable":false,"visible":true,"price":0,"currency":0,"maxiumStack":99,"upgradeLevel":0,"weight":0.10000000149011612,"dropRates":0,"favorite":false,"attributes":[],"maximumRandomAttributes":5,"enchantments":[],"craftMaterials":[],"actions":[],"tags":[],"customData":[],"restrictionKey":"","restrictionValue":0,"socketingSlots":0,"socketedItems":[],"socketingTag":[],"fold":true},"Number":0,"Empty":true,"Fold":true}],"HiddenStacks":[],"Currency":{"Currency":[0,0,0,0,0,0,0],"KeepPostive":true},"InventorySize":10,"MaxiumCarryWeight":200.0,"SellPriceMultiplier":1.0,"BuyPriceMultiplier":1.0,"SpecificPriceMultiplier":[],"TradeAllItems":true,"TradeList":[],"TradeCategoryList":[]},{"Name":"Equipment","EntityUid":"Lia","Type":5,"Stacks":[],"HiddenStacks":[],"Currency":{"Currency":[0,0,0,0,0,0,0],"KeepPostive":true},"InventorySize":10,"MaxiumCarryWeight":200.0,"SellPriceMultiplier":1.0,"BuyPriceMultiplier":1.0,"SpecificPriceMultiplier":[],"TradeAllItems":true,"TradeList":[],"TradeCategoryList":[]}],"lootpackFold":true,"LootPacks":[],"references":{"version":2,"RefIds":[{"rid":-2,"type":{"class":"","ns":"","asm":""},"data":{}}]}}'

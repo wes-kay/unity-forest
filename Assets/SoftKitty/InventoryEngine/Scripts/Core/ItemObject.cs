@@ -993,6 +993,16 @@ namespace SoftKitty
             }
         }
 
+        /// <summary>
+        /// Retrieves whether the Item with unique string UID exists.
+        /// </summary>
+        /// <param name="_uid"></param>
+        /// <returns></returns>
+        public bool ItemExist(string _uid)
+        {
+            return ItemExist(IdManager.GetId(_uid));
+        }
+
 
         /// <summary>
         /// Retrieves the Item setting based on its unique string UID. This is used for fetching specific Item data efficiently.

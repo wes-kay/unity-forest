@@ -104,6 +104,25 @@ namespace SoftKitty
         public bool fold = false;
         #endregion
 
+        #region Master GPU-HealthBar
+#if MASTER_HEALTH_BAR
+        public int barEffectType = -1;
+        public Color barEffctColor;
+        public bool endTime = false;
+        public Color timeColor;
+        public bool fadeVisible = false;
+        public enum FadeType
+        {
+            Type0,
+            Type1,
+            Type2
+        }
+        public FadeType fadeType;
+        public bool flash = false;
+        public float flashThreshold = 1f;
+#endif
+        #endregion
+
         #region Methods
         /// <summary>
         /// Retrieves a copy of the data.

@@ -170,6 +170,7 @@ namespace SoftKitty
                 _newItem.enchantments.Clear();
                 _newItem.actions.Clear();
                 _newItem.craftMaterials.Clear();
+                _newItem.craftMaterialTags.Clear();
                 _newItem.tags.Clear();
                 _newItem.uid = "Item" + myTarget.ItemCount.ToString();
                 _newItem.fold = true;
@@ -2187,6 +2188,7 @@ namespace SoftKitty
                             _newItem.enchantments.Clear();
                             _newItem.actions.Clear();
                             _newItem.craftMaterials.Clear();
+                            _newItem.craftMaterialTags.Clear();
                             _newItem.tags.Clear();
                             _newItem.customData.Clear();
                         }
@@ -2434,6 +2436,7 @@ namespace SoftKitty
                                             if (Mathf.FloorToInt(myTarget.items[w].craftMaterials[v].x) == i)
                                             {
                                                 myTarget.items[w].craftMaterials.RemoveAt(v);
+                                                if(myTarget.items[w].craftMaterialTags.Count>v) myTarget.items[w].craftMaterialTags.RemoveAt(v);
                                             }
                                             else if (myTarget.items[w].craftMaterials[v].x > i)
                                             {
@@ -2597,6 +2600,7 @@ namespace SoftKitty
                                             if (Mathf.FloorToInt(myTarget.itemScriptableObjects[w].mItem.craftMaterials[v].x) == i)
                                             {
                                                 myTarget.itemScriptableObjects[w].mItem.craftMaterials.RemoveAt(v);
+                                                if (myTarget.itemScriptableObjects[w].mItem.craftMaterialTags.Count > v) myTarget.itemScriptableObjects[w].mItem.craftMaterialTags.RemoveAt(v);
                                             }
                                             else if (myTarget.itemScriptableObjects[w].mItem.craftMaterials[v].x > i)
                                             {
@@ -3230,6 +3234,7 @@ namespace SoftKitty
                 if (GUILayout.Button(new GUIContent(EditorUtils.GetTexture(EditorIcon.Add), "Add a new crafting material"), EditorUtils._toolButtonStyle, GUILayout.Width(20), GUILayout.Height(20)))
                 {
                     _itemData.craftMaterials.Add(new Vector2(0, 1));
+                    _itemData.craftMaterialTags.Add("");
                     _valueChanged = true;
                     EditorGUI.FocusTextInControl(null);
                 }
@@ -3238,6 +3243,7 @@ namespace SoftKitty
             if (GUILayout.Button(new GUIContent(EditorUtils.GetTexture(EditorIcon.Copy), "Copy the settings of the materials"), EditorUtils._toolButtonStyle, GUILayout.Width(20), GUILayout.Height(20)))
             {
                 ClipboardVector2List = _itemData.craftMaterials;
+                ClipboardStringList= _itemData.craftMaterialTags;
             }
             if (GUILayout.Button(new GUIContent(EditorUtils.GetTexture(EditorIcon.Paste), "Paste the settings of the materials"), EditorUtils._toolButtonStyle, GUILayout.Width(20), GUILayout.Height(20)))
             {
@@ -3248,6 +3254,11 @@ namespace SoftKitty
                     {
                         _itemData.craftMaterials.Add(ClipboardVector2List[y]);
                     }
+                    _itemData.craftMaterialTags.Clear();
+                    for (int y = 0; y < ClipboardStringList.Count; y++)
+                    {
+                        _itemData.craftMaterialTags.Add(ClipboardStringList[y]);
+                    }
                     _valueChanged = true;
                     EditorGUI.FocusTextInControl(null);
                 }
@@ -3255,6 +3266,7 @@ namespace SoftKitty
             if (GUILayout.Button(new GUIContent(EditorUtils.GetTexture(EditorIcon.Reset), "Reset the settings of the materials"), EditorUtils._toolButtonStyle, GUILayout.Width(20), GUILayout.Height(20)))
             {
                 _itemData.craftMaterials.Clear();
+                _itemData.craftMaterialTags.Clear();
                 _valueChanged = true;
                 EditorGUI.FocusTextInControl(null);
             }
@@ -3266,21 +3278,34 @@ namespace SoftKitty
             {
                 GUILayout.BeginHorizontal();
                 GUILayout.Space(30);
-                GUI.backgroundColor = EditorUtils._titleColor * 0.6F;
+                if (_itemData.craftMaterialTags.Count <= u) _itemData.craftMaterialTags.Add("");
+                
                 GUILayout.Label(">", GUILayout.Width(15));
-                int _matItemid = Mathf.FloorToInt(Mathf.Max(Mathf.FloorToInt(_itemData.craftMaterials[u].x), 0));
-                int _mat = ItemObject.instance.IndexOfItems(_matItemid);
-                if (_mat < 0)
+                int _matItemid = Mathf.FloorToInt(_itemData.craftMaterials[u].x);
+                bool _isTag = _matItemid < 0;
+                GUI.backgroundColor = EditorUtils._black;
+                _isTag = GUILayout.Toggle(_isTag, new GUIContent("Use Tag", "Use items with specified tag as crafting material"), GUILayout.Width(100));
+                int _mat = -1;
+                
+                if (_isTag)
                 {
-                    _mat = 0;
+                    _itemData.craftMaterials[u] = new Vector2(-1, _itemData.craftMaterials[u].y);
+                    GUI.backgroundColor = EditorUtils._buttonColor;
+                    GUILayout.Box("Tag", GUILayout.Width(30));
+                    _itemData.craftMaterialTags[u] = GUILayout.TextField(_itemData.craftMaterialTags[u], GUILayout.Width(180), GUILayout.Height(20));
                 }
                 else
                 {
+                    GUI.backgroundColor = EditorUtils._titleColor * 0.6F;
+                    _matItemid = Mathf.Max(_matItemid,0);
+                    _mat = ItemObject.instance.IndexOfItems(_matItemid);
+                    _itemData.craftMaterials[u] = new Vector2(ItemObject.instance.GetItemByIndex(_mat).id, _itemData.craftMaterials[u].y);
                     ItemIcon(_editorAsset, _matItemid);
+                    EditorGUI.BeginChangeCheck();
+                    _mat = EditorGUILayout.Popup("", _mat, _itemOption, GUILayout.Width(180), GUILayout.Height(20));
+                    if (EditorGUI.EndChangeCheck()) _itemData.craftMaterials[u] = new Vector2(ItemObject.instance.GetItemByIndex(_mat).id, _itemData.craftMaterials[u].y);
                 }
-                EditorGUI.BeginChangeCheck();
-                _mat = EditorGUILayout.Popup("", _mat, _itemOption, GUILayout.Width(180), GUILayout.Height(20));
-                if (EditorGUI.EndChangeCheck()) _itemData.craftMaterials[u] = new Vector2(ItemObject.instance.GetItemByIndex(_mat).id, _itemData.craftMaterials[u].y);
+
                 GUILayout.Label("x", GUILayout.Width(30), GUILayout.Height(20));
                 _itemData.craftMaterials[u] = new Vector2(_itemData.craftMaterials[u].x, EditorGUILayout.IntField(Mathf.FloorToInt(_itemData.craftMaterials[u].y), GUILayout.Width(70), GUILayout.Height(20)));
                 EditorUtils.ResetColor();
@@ -3288,6 +3313,7 @@ namespace SoftKitty
                 if (GUILayout.Button(new GUIContent("X", "Remove this crafting material."), GUILayout.Width(25)))
                 {
                     _itemData.craftMaterials.RemoveAt(u);
+                    _itemData.craftMaterialTags.RemoveAt(u);
                     _valueChanged = true;
                     EditorGUI.FocusTextInControl(null);
                 }

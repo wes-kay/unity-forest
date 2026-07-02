@@ -28,6 +28,18 @@ namespace SoftKitty
         }
 
         /// <summary>
+        /// Retrieves whether this EntityModule has been modified, a save action from EntityManager will clear this flag.
+        /// </summary>
+        /// <returns></returns>
+        public virtual bool isDirty
+        {
+            get
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
         /// Additional attributes this Module provides. Requires integer attribute _id.
         /// </summary>
         /// <param name="_id"></param>
@@ -263,12 +275,22 @@ namespace SoftKitty
 
         public List<EntityModuleWrapper> Modules = new List<EntityModuleWrapper>();
         private Dictionary<System.Type, EntityModuleWrapper> moduleCache;
+        private bool _dirty = false;
         public void OnAfterDeserialize()
         {
             //BuildCache();
         }
 
         public void OnBeforeSerialize() {}
+
+        /// <summary>
+        /// Override the flag whether this Entity has been modified
+        /// </summary>
+        /// <param name="_value"></param>
+        public void SetDirty(bool _value)
+        {
+            _dirty = _value;
+        }
 
         private void BuildCache()
         {
@@ -280,6 +302,23 @@ namespace SoftKitty
                 if (type == null) continue;
                 moduleCache[type] = wrapper;
                 if (SGD_Settings.isRuntime) wrapper.GetModule().RuntimeInit();
+            }
+        }
+
+        /// <summary>
+        /// Retrieves whether this Entity has been modified, a save action from EntityManager will clear this flag.
+        /// </summary>
+        /// <returns></returns>
+        public virtual bool isDirty
+        {
+            get
+            {
+                if (_dirty) return true;
+                foreach (var obj in Modules)
+                {
+                    if (obj.GetModule() != null && obj.GetModule().isDirty) return true;
+                }
+                return false;
             }
         }
 
@@ -389,6 +428,7 @@ namespace SoftKitty
             foreach (var obj in _copy.Modules) {
                 obj.Compress();
             }
+            _dirty = false;
             return _copy;
         }
 
@@ -402,6 +442,7 @@ namespace SoftKitty
                 obj.Uncompress();
                 obj.Recreate();
             }
+            _dirty = false;
             return _copy;
         }
 
@@ -623,6 +664,7 @@ namespace SoftKitty
         {
             int _index = GameManager.EntityManagerData.GetCustomIndex(_uid);
             if (_index >= 0 && _index < CustomFloat.Count) CustomFloat[_index] = _value;
+            _dirty = true;
         }
         /// <summary>
         /// Overrides the value for a custom integer data by its unique UID.
@@ -633,6 +675,7 @@ namespace SoftKitty
         {
             int _index = GameManager.EntityManagerData.GetCustomIndex(_uid);
             if (_index >= 0 && _index < CustomInt.Count) CustomInt[_index] = _value;
+            _dirty = true;
         }
         /// <summary>
         /// Overrides the value for a custom boolean data by its unique UID.
@@ -643,6 +686,7 @@ namespace SoftKitty
         {
             int _index = GameManager.EntityManagerData.GetCustomIndex(_uid);
             if (_index >= 0 && _index < CustomBool.Count) CustomBool[_index] = _value;
+            _dirty = true;
         }
         /// <summary>
         /// Overrides the value for a custom string data by its unique UID.
@@ -653,6 +697,7 @@ namespace SoftKitty
         {
             int _index = GameManager.EntityManagerData.GetCustomIndex(_uid);
             if (_index >= 0 && _index < CustomString.Count) CustomString[_index] = _value;
+            _dirty = true;
         }
 
         /// <summary>
@@ -694,6 +739,7 @@ namespace SoftKitty
                     _pos.y = hit.point.y + 0.01f;
                 }
             }
+            if(Position!=_pos) _dirty = true;
             Position = _pos;
         }
 
@@ -842,6 +888,7 @@ namespace SoftKitty
                     mOverTimeEffect.Add(_id, _newEffect);
                     OnOverTimeChange(_setting.uid, _newEffect, OverTimeEffectEventType.Add);
                 }
+                
             }
             return _newEffect;
         }
@@ -993,6 +1040,7 @@ namespace SoftKitty
             float _defaultFloat = 0F;
             float.TryParse(_defaultString, out _defaultFloat);
             Attributes.Add(new AttributeData(_uid, _defaultFloat, _defaultString));
+            _dirty = true;
         }
         /// <summary>
         /// Remove an new attribute data by its string UID. 
@@ -1005,6 +1053,7 @@ namespace SoftKitty
                 if (Attributes[i].uid == _uid)
                 {
                     Attributes.RemoveAt(i);
+                    _dirty = true;
                 }
             }
         }
@@ -1067,6 +1116,7 @@ namespace SoftKitty
         public void SetAttributeValue(int _id, float _value)
         {
             GetAttributeData(_id).SetValue(_value);
+            _dirty = true;
         }
         /// <summary>
         /// Sets the value of an attribute by its string UID to a float value.
@@ -1076,6 +1126,7 @@ namespace SoftKitty
         public void SetAttributeValue(string _uid, float _value)
         {
             GetAttributeData(_uid).SetValue(_value);
+            _dirty = true;
         }
         /// <summary>
         /// Sets the value of an attribute by its integer ID to an integer value.
@@ -1085,6 +1136,7 @@ namespace SoftKitty
         public void SetAttributeValue(int _id, int _value)
         {
             GetAttributeData(_id).SetValue(_value);
+            _dirty = true;
         }
         /// <summary>
         /// Sets the value of an attribute by its string UID to an integer value.
@@ -1094,6 +1146,7 @@ namespace SoftKitty
         public void SetAttributeValue(string _uid, int _value)
         {
             GetAttributeData(_uid).SetValue(_value);
+            _dirty = true;
         }
         /// <summary>
         /// Sets the value of an attribute by its integer ID to a string value.
@@ -1103,6 +1156,7 @@ namespace SoftKitty
         public void SetAttributeValue(int _id, string _value)
         {
             GetAttributeData(_id).SetValue(_value);
+            _dirty = true;
         }
         /// <summary>
         /// Sets the value of an attribute by its string UID to a string value.
@@ -1112,6 +1166,7 @@ namespace SoftKitty
         public void SetAttributeValue(string _uid, string _value)
         {
             GetAttributeData(_uid).SetValue(_value);
+            _dirty = true;
         }
         /// <summary>
         /// Adds a float value to an existing attribute by its integer ID and returns the result.
@@ -1121,6 +1176,7 @@ namespace SoftKitty
         /// <returns></returns>
         public float AddAttributeValue(int _id, float _value)
         {
+            _dirty = true;
             return GetAttributeData(_id).AddValue(_value);
         }
         /// <summary>
@@ -1131,6 +1187,7 @@ namespace SoftKitty
         /// <returns></returns>
         public float AddAttributeValue(string _uid, float _value)
         {
+            _dirty = true;
             return GetAttributeData(_uid).AddValue(_value);
         }
         /// <summary>
@@ -1141,6 +1198,7 @@ namespace SoftKitty
         /// <returns></returns>
         public int AddAttributeValue(int _id, int _value)
         {
+            _dirty = true;
             return GetAttributeData(_id).AddValue(_value);
         }
         /// <summary>
@@ -1151,6 +1209,7 @@ namespace SoftKitty
         /// <returns></returns>
         public int AddAttributeValue(string _uid, int _value)
         {
+            _dirty = true;
             return GetAttributeData(_uid).AddValue(_value);
         }
         /// <summary>
@@ -1163,6 +1222,7 @@ namespace SoftKitty
         /// <returns></returns>
         public float AddAttributeValueClamp(int _id, float _value, float _min, float _max)
         {
+            _dirty = true;
             return GetAttributeData(_id).AddValueClamp(_value, _min, _max);
         }
         /// <summary>
@@ -1175,6 +1235,7 @@ namespace SoftKitty
         /// <returns></returns>
         public float AddAttributeValueClamp(string _uid, float _value, float _min, float _max)
         {
+            _dirty = true;
             return GetAttributeData(_uid).AddValueClamp(_value, _min, _max);
         }
         /// <summary>
@@ -1187,6 +1248,7 @@ namespace SoftKitty
         /// <returns></returns>
         public int AddAttributeValueClamp(int _id, int _value, int _min, int _max)
         {
+            _dirty = true;
             return GetAttributeData(_id).AddValueClamp(_value, _min, _max);
         }
         /// <summary>
@@ -1199,6 +1261,7 @@ namespace SoftKitty
         /// <returns></returns>
         public int AddAttributeValueClamp(string _uid, int _value, int _min, int _max)
         {
+            _dirty = true;
             return GetAttributeData(_uid).AddValueClamp(_value, _min, _max);
         }
         /// <summary>

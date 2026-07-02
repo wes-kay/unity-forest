@@ -69,7 +69,7 @@ namespace SoftKitty
             EditorUtils.ResetColor();
             EditorUtils.End(0);
 
-            EditorUtils.Document("core/entities/EntityManagerObject");
+            EditorUtils.Document("core/entities/EntityManagerObject",true);
             EditorGUILayout.Separator();
 
             EditorUtils.Save();

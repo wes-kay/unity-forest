@@ -11,11 +11,13 @@ namespace SoftKitty.InventoryEngine
         public LinkIcon Item;
         public Image KeyBack;
         public Text KeyText;
+        public bool Enable = true;
         private ActionSlotData SlotData;
         private InventoryData Holder;
-        int Number = 0;
-        int Index = 0;
-        bool inited = false;
+        private bool WasEnable = true;
+        private int Number = 0;
+        private int Index = 0;
+        private bool inited = false;
         #endregion
 
         #region Internal Methods
@@ -52,7 +54,8 @@ namespace SoftKitty.InventoryEngine
                 Item.SetEmpty();
             }
             UpdateKey();
-            Item.Group.alpha = (Number == 0 && SlotData.itemId >= 0) ? 0.3F : 1F;
+            WasEnable = Enable;
+            Item.Group.alpha = ((Number == 0 && SlotData.itemId >= 0) || !Enable) ? 0.3F : 1F;
             Item.LimitedByOwner = _holder.EntityUid;
             inited = true;
         }
@@ -67,10 +70,11 @@ namespace SoftKitty.InventoryEngine
         {
             
             if (!inited) return;
-            if (Number != Item.GetNumber() || SlotData.itemId != Item.GetItemId())
+            if (Number != Item.GetNumber() || SlotData.itemId != Item.GetItemId() || WasEnable != Enable)
             {
                 Number = Item.GetNumber();
-                Item.Group.alpha = (Number == 0 && Item.GetItemId() >= 0) ? 0.3F : 1F;
+                WasEnable = Enable;
+                Item.Group.alpha = ((Number == 0 && Item.GetItemId() >= 0) || !Enable) ? 0.3F : 1F;
                 if (SlotData.itemId != Item.GetItemId())
                 {
                     SlotData.itemId = Item.GetItemId();
@@ -99,7 +103,7 @@ namespace SoftKitty.InventoryEngine
         #endregion
         public void Use() // Use the item in this slot.
         {
-            if (Item.GetStackHolder() != null && SlotData.itemId >= 0 && Number > 0 )
+            if (Enable && Item.GetStackHolder() != null && SlotData.itemId >= 0 && Number > 0 )
             {
                 int _index = Holder.GetItemIndex(Item.GetItemId(), Item.GetItem().upgradeLevel, Item.GetItem().enchantments, Item.GetItem().socketedItems);
                 Item.GetStackHolder().UseItem(Item.GetItemId(), 1, _index);

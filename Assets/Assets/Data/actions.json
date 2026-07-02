@@ -1,0 +1,1597 @@
+[
+    {
+        "action": "equip",
+        "description": "Places the item into the appropriate equipment slot on the character.",
+        "reads": [],
+        "writes": []
+    },
+    {
+        "action": "unequip",
+        "description": "Removes the item from its equipment slot and returns it to inventory.",
+        "reads": [],
+        "writes": []
+    },
+    {
+        "action": "AddVitality",
+        "description": "Restores a flat amount of vitality to the character.",
+        "reads": [
+            "mvit"
+        ],
+        "writes": [
+            "cvit"
+        ]
+    },
+    {
+        "action": "AddVitalityPercent",
+        "description": "Restores a percentage of maximum vitality.",
+        "reads": [
+            "mvit"
+        ],
+        "writes": [
+            "cvit"
+        ]
+    },
+    {
+        "action": "AddStamina",
+        "description": "Restores a flat amount of stamina.",
+        "reads": [
+            "msta"
+        ],
+        "writes": [
+            "csta"
+        ]
+    },
+    {
+        "action": "AddStaminaPercent",
+        "description": "Restores a percentage of maximum stamina.",
+        "reads": [
+            "msta"
+        ],
+        "writes": [
+            "csta"
+        ]
+    },
+    {
+        "action": "AddWillpower",
+        "description": "Restores a flat amount of willpower.",
+        "reads": [
+            "mwil"
+        ],
+        "writes": [
+            "cwil"
+        ]
+    },
+    {
+        "action": "AddFocus",
+        "description": "Restores a flat amount of focus.",
+        "reads": [
+            "mfoc"
+        ],
+        "writes": [
+            "cfoc"
+        ]
+    },
+    {
+        "action": "AddBlood",
+        "description": "Replenishes blood supply by a flat amount.",
+        "reads": [
+            "mbld"
+        ],
+        "writes": [
+            "cbld"
+        ]
+    },
+    {
+        "action": "DrainBlood",
+        "description": "Deliberately removes blood from the character, used in blood magic rituals or bloodletting.",
+        "reads": [
+            "cbld"
+        ],
+        "writes": [
+            "cbld",
+            "ccur"
+        ]
+    },
+    {
+        "action": "RestoreSanity",
+        "description": "Reduces current madness and restores sanity by a flat amount.",
+        "reads": [
+            "msan"
+        ],
+        "writes": [
+            "csan",
+            "cmad"
+        ]
+    },
+    {
+        "action": "RestoreMorale",
+        "description": "Boosts morale by a flat amount.",
+        "reads": [
+            "mmor"
+        ],
+        "writes": [
+            "cmor"
+        ]
+    },
+    {
+        "action": "ReduceHunger",
+        "description": "Reduces the hunger value, representing food consumed.",
+        "reads": [
+            "mhng"
+        ],
+        "writes": [
+            "chng"
+        ]
+    },
+    {
+        "action": "ReduceThirst",
+        "description": "Reduces thirst value, representing liquid consumed.",
+        "reads": [
+            "mthr"
+        ],
+        "writes": [
+            "cthr"
+        ]
+    },
+    {
+        "action": "ReduceFatigue",
+        "description": "Lowers fatigue, representing rest or stimulants.",
+        "reads": [
+            "mfat"
+        ],
+        "writes": [
+            "cfat"
+        ]
+    },
+    {
+        "action": "ReduceExposure",
+        "description": "Lowers environmental exposure, such as cold or heat accumulation.",
+        "reads": [
+            "mexp"
+        ],
+        "writes": [
+            "cexp"
+        ]
+    },
+    {
+        "action": "AddWarmth",
+        "description": "Increases warmth, counteracting cold exposure.",
+        "reads": [
+            "mwrk"
+        ],
+        "writes": [
+            "cwrk"
+        ]
+    },
+    {
+        "action": "StopBleeding",
+        "description": "Reduces active bleeding by a flat amount. Requires first aid skill check.",
+        "reads": [
+            "faid",
+            "cble"
+        ],
+        "writes": [
+            "cble"
+        ]
+    },
+    {
+        "action": "CureBleeding",
+        "description": "Fully removes all bleeding stacks.",
+        "reads": [
+            "cble"
+        ],
+        "writes": [
+            "cble"
+        ]
+    },
+    {
+        "action": "ReduceInfection",
+        "description": "Lowers infection level. Effectiveness scales with toxicology skill.",
+        "reads": [
+            "cinf",
+            "toxi"
+        ],
+        "writes": [
+            "cinf"
+        ]
+    },
+    {
+        "action": "CureInfection",
+        "description": "Fully clears an active infection.",
+        "reads": [
+            "cinf",
+            "diag"
+        ],
+        "writes": [
+            "cinf"
+        ]
+    },
+    {
+        "action": "ReduceVenom",
+        "description": "Neutralises venom by a flat amount. Scales with toxicology.",
+        "reads": [
+            "cven",
+            "toxi"
+        ],
+        "writes": [
+            "cven"
+        ]
+    },
+    {
+        "action": "CureVenom",
+        "description": "Fully removes all venom from the character.",
+        "reads": [
+            "cven"
+        ],
+        "writes": [
+            "cven"
+        ]
+    },
+    {
+        "action": "ReducePain",
+        "description": "Dulls pain by a flat amount. High doses may reduce focus as a side effect.",
+        "reads": [
+            "cpai",
+            "pres"
+        ],
+        "writes": [
+            "cpai",
+            "cfoc"
+        ]
+    },
+    {
+        "action": "ReduceFever",
+        "description": "Lowers fever value, reducing its penalties to constitution and focus.",
+        "reads": [
+            "cfvr"
+        ],
+        "writes": [
+            "cfvr"
+        ]
+    },
+    {
+        "action": "ReduceStress",
+        "description": "Lowers stress, reducing risk of morale breaks and madness accumulation.",
+        "reads": [
+            "cstr",
+            "sres"
+        ],
+        "writes": [
+            "cstr"
+        ]
+    },
+    {
+        "action": "ReduceCorruption",
+        "description": "Purges corruption by a flat amount. Rare and costly. May cause pain as a side effect.",
+        "reads": [
+            "ccor",
+            "corr"
+        ],
+        "writes": [
+            "ccor",
+            "cpai"
+        ]
+    },
+    {
+        "action": "ReduceMadness",
+        "description": "Suppresses madness by a flat amount. Does not restore sanity.",
+        "reads": [
+            "cmad",
+            "mres"
+        ],
+        "writes": [
+            "cmad"
+        ]
+    },
+    {
+        "action": "ReduceCurse",
+        "description": "Weakens an active curse. Requires faith or occult knowledge to take effect.",
+        "reads": [
+            "ccur",
+            "cfai",
+            "occu"
+        ],
+        "writes": [
+            "ccur"
+        ]
+    },
+    {
+        "action": "CleanseCurse",
+        "description": "Fully removes a curse. Requires exorcism or high faith.",
+        "reads": [
+            "cfai",
+            "exor"
+        ],
+        "writes": [
+            "ccur"
+        ]
+    },
+    {
+        "action": "ReduceHeresy",
+        "description": "Reduces heresy accumulation through confession, penance, or ritual cleansing.",
+        "reads": [
+            "cher",
+            "cfai",
+            "ritu"
+        ],
+        "writes": [
+            "cher"
+        ]
+    },
+    {
+        "action": "ReduceDarkInsight",
+        "description": "Suppresses dark insight gained from forbidden knowledge. May cause temporary memory loss.",
+        "reads": [
+            "cdar",
+            "memo"
+        ],
+        "writes": [
+            "cdar",
+            "memo"
+        ]
+    },
+    {
+        "action": "ReducePossession",
+        "description": "Weakens a possessing entity's hold on the character.",
+        "reads": [
+            "cpos",
+            "poss",
+            "exor"
+        ],
+        "writes": [
+            "cpos"
+        ]
+    },
+    {
+        "action": "ResistPossession",
+        "description": "Temporarily boosts possession resistance.",
+        "reads": [
+            "poss"
+        ],
+        "writes": [
+            "poss"
+        ]
+    },
+    {
+        "action": "ReduceMutation",
+        "description": "Slows or partially reverses an active mutation. Requires surgery or alchemy.",
+        "reads": [
+            "cmut",
+            "surg",
+            "alch"
+        ],
+        "writes": [
+            "cmut"
+        ]
+    },
+    {
+        "action": "HealBodyPart",
+        "description": "Restores health to a specific body part. Target part determined by item tag.",
+        "reads": [
+            "faid",
+            "surg"
+        ],
+        "writes": [
+            "ched",
+            "ctor",
+            "clar",
+            "crar",
+            "cllg",
+            "crlg"
+        ]
+    },
+    {
+        "action": "SplintLimb",
+        "description": "Stabilises a broken or severely damaged limb, halting further degradation.",
+        "reads": [
+            "faid",
+            "clar",
+            "crar",
+            "cllg",
+            "crlg"
+        ],
+        "writes": [
+            "clar",
+            "crar",
+            "cllg",
+            "crlg"
+        ]
+    },
+    {
+        "action": "BandageWound",
+        "description": "Applies a bandage to reduce bleeding and provide minor vitality regeneration.",
+        "reads": [
+            "faid",
+            "cble"
+        ],
+        "writes": [
+            "cble",
+            "regn"
+        ]
+    },
+    {
+        "action": "ApplyPoultice",
+        "description": "Applies a herbal poultice to reduce infection and pain on a wound.",
+        "reads": [
+            "herb",
+            "faid",
+            "cinf",
+            "cpai"
+        ],
+        "writes": [
+            "cinf",
+            "cpai"
+        ]
+    },
+    {
+        "action": "Cauterise",
+        "description": "Burns a wound closed, stopping all bleeding but causing significant pain and burn trauma.",
+        "reads": [
+            "faid",
+            "cble"
+        ],
+        "writes": [
+            "cble",
+            "cpai",
+            "ctor"
+        ]
+    },
+    {
+        "action": "SetBone",
+        "description": "Resets a fractured bone, restoring limb function over time. Causes acute pain.",
+        "reads": [
+            "surg",
+            "anat"
+        ],
+        "writes": [
+            "clar",
+            "crar",
+            "cllg",
+            "crlg",
+            "cpai"
+        ]
+    },
+    {
+        "action": "ApplyTourniquet",
+        "description": "Stops bleeding on a limb entirely but risks necrosis if left too long.",
+        "reads": [
+            "faid"
+        ],
+        "writes": [
+            "cble",
+            "cllg",
+            "crlg",
+            "clar",
+            "crar"
+        ]
+    },
+    {
+        "action": "PerformSurgery",
+        "description": "Requires surgery and anatomy skill. Repairs severe internal damage. High risk if skills are low.",
+        "reads": [
+            "surg",
+            "anat",
+            "diag"
+        ],
+        "writes": [
+            "ctor",
+            "ched",
+            "cpai",
+            "cinf"
+        ]
+    },
+    {
+        "action": "Amputate",
+        "description": "Removes a limb to prevent death from necrosis or extreme damage. Requires amputation skill.",
+        "reads": [
+            "ampu",
+            "surg"
+        ],
+        "writes": [
+            "clar",
+            "crar",
+            "cllg",
+            "crlg",
+            "cpai",
+            "cble"
+        ]
+    },
+    {
+        "action": "Embalm",
+        "description": "Applies embalming reagents to a corpse or to the character to slow corruption spread.",
+        "reads": [
+            "emba",
+            "ccor"
+        ],
+        "writes": [
+            "ccor"
+        ]
+    },
+    {
+        "action": "AttackSlash",
+        "description": "Delivers a slashing attack. Damage and crit chance scale with swordsmanship or dagger mastery.",
+        "reads": [
+            "strn",
+            "swrd",
+            "dagg",
+            "crit",
+            "accu"
+        ],
+        "writes": [
+            "cvit",
+            "cble"
+        ]
+    },
+    {
+        "action": "AttackThrust",
+        "description": "Delivers a thrusting attack targeting gaps in armour. Scales with spear or dagger mastery.",
+        "reads": [
+            "dext",
+            "spea",
+            "dagg",
+            "accu"
+        ],
+        "writes": [
+            "cvit",
+            "cpai"
+        ]
+    },
+    {
+        "action": "AttackBludgeon",
+        "description": "Heavy bludgeoning attack. Can cause stun and bone damage. Scales with mace or axe mastery.",
+        "reads": [
+            "strn",
+            "mace",
+            "axem",
+            "accu"
+        ],
+        "writes": [
+            "cvit",
+            "ched",
+            "stun"
+        ]
+    },
+    {
+        "action": "AttackAxe",
+        "description": "Chopping attack with axe. High damage, may cause bleeding. Scales with axe mastery.",
+        "reads": [
+            "strn",
+            "axem",
+            "crit",
+            "accu"
+        ],
+        "writes": [
+            "cvit",
+            "cble"
+        ]
+    },
+    {
+        "action": "AttackUnarmed",
+        "description": "Unarmed strike. Scales with unarmed combat and strength.",
+        "reads": [
+            "strn",
+            "unar",
+            "accu"
+        ],
+        "writes": [
+            "cvit",
+            "cpai"
+        ]
+    },
+    {
+        "action": "AttackThrow",
+        "description": "Throws the item as a ranged attack. Scales with throwing skill and perception.",
+        "reads": [
+            "perc",
+            "thrw",
+            "accu"
+        ],
+        "writes": [
+            "cvit"
+        ]
+    },
+    {
+        "action": "AttackShoot",
+        "description": "Ranged attack with bow. Scales with archery and perception.",
+        "reads": [
+            "perc",
+            "arch",
+            "accu",
+            "dext"
+        ],
+        "writes": [
+            "cvit",
+            "cble"
+        ]
+    },
+    {
+        "action": "AttackCrossbow",
+        "description": "Ranged attack with crossbow. Scales with crossbow skill.",
+        "reads": [
+            "perc",
+            "xbow",
+            "accu"
+        ],
+        "writes": [
+            "cvit",
+            "cpai"
+        ]
+    },
+    {
+        "action": "Parry",
+        "description": "Activates a parry stance. Scales with parrying skill and reflexes.",
+        "reads": [
+            "refl",
+            "parr"
+        ],
+        "writes": [
+            "bloc",
+            "evas"
+        ]
+    },
+    {
+        "action": "Block",
+        "description": "Raises a shield or weapon to block incoming damage.",
+        "reads": [
+            "strn",
+            "shld",
+            "bloc"
+        ],
+        "writes": [
+            "cvit",
+            "armr"
+        ]
+    },
+    {
+        "action": "Dodge",
+        "description": "Activates a dodge. Scales with dodging skill and agility.",
+        "reads": [
+            "agil",
+            "dodg",
+            "evas"
+        ],
+        "writes": [
+            "evas"
+        ]
+    },
+    {
+        "action": "ExecuteFinisher",
+        "description": "Delivers a killing blow to a downed or near-death target. Scales with execution skill.",
+        "reads": [
+            "exec",
+            "strn"
+        ],
+        "writes": [
+            "cvit"
+        ]
+    },
+    {
+        "action": "Intimidate",
+        "description": "Uses intimidation to reduce target morale. Scales with intimidation skill.",
+        "reads": [
+            "inti",
+            "comm"
+        ],
+        "writes": [
+            "cmor",
+            "cstr"
+        ]
+    },
+    {
+        "action": "Torture",
+        "description": "Extracts information or causes sustained pain. Scales with torture skill.",
+        "reads": [
+            "tort",
+            "cpai"
+        ],
+        "writes": [
+            "cpai",
+            "cmor",
+            "cstr"
+        ]
+    },
+    {
+        "action": "ApplyPoison",
+        "description": "Coats a weapon or item with poison. Scales with poisoncraft.",
+        "reads": [
+            "pois"
+        ],
+        "writes": [
+            "cven"
+        ]
+    },
+    {
+        "action": "ApplyBloodPoison",
+        "description": "Applies a blood-corrupting toxin. Deals damage over time and adds corruption.",
+        "reads": [
+            "pois",
+            "blod"
+        ],
+        "writes": [
+            "cbld",
+            "ccor",
+            "cven"
+        ]
+    },
+    {
+        "action": "SetTrap",
+        "description": "Places a trap in the environment. Scales with trap making and trapping skill.",
+        "reads": [
+            "trap",
+            "trmk"
+        ],
+        "writes": []
+    },
+    {
+        "action": "LightFire",
+        "description": "Creates a fire source. Reduces exposure and provides warmth in camp.",
+        "reads": [
+            "camp",
+            "surv"
+        ],
+        "writes": [
+            "cwrk",
+            "cexp"
+        ]
+    },
+    {
+        "action": "Cook",
+        "description": "Prepares food at a campfire. Improves the nutritional value of raw ingredients.",
+        "reads": [
+            "camp",
+            "surv"
+        ],
+        "writes": [
+            "chng",
+            "cvit"
+        ]
+    },
+    {
+        "action": "Brew",
+        "description": "Brews a potion or tincture from alchemical ingredients. Scales with alchemy.",
+        "reads": [
+            "alch"
+        ],
+        "writes": []
+    },
+    {
+        "action": "CraftItem",
+        "description": "Uses the item as a crafting component or tool to produce another item.",
+        "reads": [
+            "blks",
+            "wpsm",
+            "arsm",
+            "tail",
+            "leat",
+            "bons",
+            "fles",
+            "alch",
+            "engi"
+        ],
+        "writes": []
+    },
+    {
+        "action": "RepairItem",
+        "description": "Restores item durability. Scales with the relevant crafting skill.",
+        "reads": [
+            "blks",
+            "wpsm",
+            "arsm",
+            "tail",
+            "leat"
+        ],
+        "writes": []
+    },
+    {
+        "action": "Enchant",
+        "description": "Applies an enchantment to an item. Scales with enchanting and arcane knowledge.",
+        "reads": [
+            "ench",
+            "arca"
+        ],
+        "writes": []
+    },
+    {
+        "action": "Rune",
+        "description": "Inscribes a rune onto an item or surface. Scales with runecrafting.",
+        "reads": [
+            "rune"
+        ],
+        "writes": []
+    },
+    {
+        "action": "Sacrifice",
+        "description": "Destroys the item in a ritual to generate faith or power. Scales with sacrifice and ritual lore.",
+        "reads": [
+            "sacr",
+            "ritu",
+            "cfai"
+        ],
+        "writes": [
+            "cfai",
+            "ccur",
+            "cbld"
+        ]
+    },
+    {
+        "action": "Pray",
+        "description": "Uses the item as a holy symbol to enhance prayer effectiveness.",
+        "reads": [
+            "pray",
+            "cfai"
+        ],
+        "writes": [
+            "cfai",
+            "cstr",
+            "cmor"
+        ]
+    },
+    {
+        "action": "Bless",
+        "description": "Blesses a target or item, granting temporary resistance bonuses.",
+        "reads": [
+            "bles",
+            "cfai"
+        ],
+        "writes": [
+            "pres",
+            "ires",
+            "corr",
+            "fres",
+            "hers"
+        ]
+    },
+    {
+        "action": "Curse",
+        "description": "Places a curse on a target. Scales with cursing and hexcraft.",
+        "reads": [
+            "curs",
+            "hexc"
+        ],
+        "writes": [
+            "ccur",
+            "cstr",
+            "cmor"
+        ]
+    },
+    {
+        "action": "Exorcise",
+        "description": "Attempts to drive out possessing entities. Scales with exorcism and faith.",
+        "reads": [
+            "exor",
+            "cfai",
+            "ritu"
+        ],
+        "writes": [
+            "cpos",
+            "cher"
+        ]
+    },
+    {
+        "action": "Meditate",
+        "description": "Uses the item as a focus for meditation, restoring willpower and reducing stress.",
+        "reads": [
+            "medi",
+            "cwil"
+        ],
+        "writes": [
+            "cwil",
+            "cstr",
+            "cfoc"
+        ]
+    },
+    {
+        "action": "CastFireSpell",
+        "description": "Channels fire magic through the item. Scales with fire magic skill.",
+        "reads": [
+            "fire",
+            "cfoc",
+            "cwil"
+        ],
+        "writes": [
+            "cvit",
+            "cfoc"
+        ]
+    },
+    {
+        "action": "CastIceSpell",
+        "description": "Channels ice magic. Can slow targets and cause frost buildup.",
+        "reads": [
+            "icem",
+            "cfoc",
+            "cwil"
+        ],
+        "writes": [
+            "cvit",
+            "cfoc",
+            "move"
+        ]
+    },
+    {
+        "action": "CastBloodSpell",
+        "description": "Draws on the character's own blood to fuel a spell. Costs blood, deals damage.",
+        "reads": [
+            "blod",
+            "cbld",
+            "cfoc"
+        ],
+        "writes": [
+            "cbld",
+            "cvit",
+            "cfoc"
+        ]
+    },
+    {
+        "action": "CastNecromancy",
+        "description": "Channels necromantic energy. May raise the dead or drain life from living targets.",
+        "reads": [
+            "necm",
+            "cfoc",
+            "cwil",
+            "cdar"
+        ],
+        "writes": [
+            "cvit",
+            "cfoc",
+            "cdar"
+        ]
+    },
+    {
+        "action": "CastSummon",
+        "description": "Summons an entity or creature. Scales with summoning and willpower.",
+        "reads": [
+            "summ",
+            "cwil",
+            "cfoc"
+        ],
+        "writes": [
+            "cwil"
+        ]
+    },
+    {
+        "action": "CastIllusion",
+        "description": "Creates an illusion to deceive targets. Scales with illusion magic.",
+        "reads": [
+            "illu",
+            "cfoc"
+        ],
+        "writes": [
+            "cfoc"
+        ]
+    },
+    {
+        "action": "CastShadowSpell",
+        "description": "Channels shadow magic for concealment or dark damage. Scales with shadow magic.",
+        "reads": [
+            "shad",
+            "cfoc",
+            "stea"
+        ],
+        "writes": [
+            "cfoc",
+            "stea"
+        ]
+    },
+    {
+        "action": "CastVoidSpell",
+        "description": "Channels void energy. Extremely high dark insight cost. Catastrophic effects.",
+        "reads": [
+            "void",
+            "cfoc",
+            "cdar"
+        ],
+        "writes": [
+            "cdar",
+            "cmad",
+            "cfoc",
+            "cvit"
+        ]
+    },
+    {
+        "action": "CastChaosSpell",
+        "description": "Unleashes chaotic energy with unpredictable effects. Scales with chaos attunement.",
+        "reads": [
+            "chao",
+            "cfoc",
+            "cdar"
+        ],
+        "writes": [
+            "cfoc",
+            "cdar",
+            "cmut"
+        ]
+    },
+    {
+        "action": "BindSpirit",
+        "description": "Binds a spirit to an item or location. Scales with spirit binding.",
+        "reads": [
+            "spir",
+            "cfai",
+            "cfoc"
+        ],
+        "writes": [
+            "cfoc",
+            "cpos"
+        ]
+    },
+    {
+        "action": "Divine",
+        "description": "Uses the item to perform divination. Increases dark insight but reveals hidden information.",
+        "reads": [
+            "divi",
+            "astr",
+            "cfoc"
+        ],
+        "writes": [
+            "cdar",
+            "cfoc"
+        ]
+    },
+    {
+        "action": "Dreamwalk",
+        "description": "Enters a dream state using the item as an anchor. Reduces sanity but grants visions.",
+        "reads": [
+            "drea",
+            "csan",
+            "cfoc"
+        ],
+        "writes": [
+            "csan",
+            "cfoc",
+            "cmad"
+        ]
+    },
+    {
+        "action": "Reanimate",
+        "description": "Reanimates a corpse using necromantic power. Costs willpower and blood.",
+        "reads": [
+            "rean",
+            "necm",
+            "cwil",
+            "cbld"
+        ],
+        "writes": [
+            "cwil",
+            "cbld"
+        ]
+    },
+    {
+        "action": "HarvestOrgan",
+        "description": "Extracts usable organs or materials from a corpse. Scales with anatomy and surgery.",
+        "reads": [
+            "anat",
+            "surg",
+            "corp"
+        ],
+        "writes": []
+    },
+    {
+        "action": "HarvestBlood",
+        "description": "Extracts blood from a source for blood magic or alchemical use.",
+        "reads": [
+            "bldh"
+        ],
+        "writes": [
+            "cbld"
+        ]
+    },
+    {
+        "action": "HarvestBone",
+        "description": "Extracts bones for crafting. Scales with bone gathering and butchery.",
+        "reads": [
+            "bone",
+            "butc"
+        ],
+        "writes": []
+    },
+    {
+        "action": "PerformAutopsy",
+        "description": "Examines a corpse to determine cause of death or extract knowledge. Scales with autopsy.",
+        "reads": [
+            "auto",
+            "anat",
+            "diag"
+        ],
+        "writes": [
+            "cdar"
+        ]
+    },
+    {
+        "action": "BuryCorpse",
+        "description": "Performs burial rites. Reduces corruption in the area and restores morale.",
+        "reads": [
+            "buri",
+            "cfai"
+        ],
+        "writes": [
+            "cmor",
+            "ccor"
+        ]
+    },
+    {
+        "action": "PerformRitual",
+        "description": "Performs a ritual using the item. Effects depend on ritual type. Scales with ritual lore.",
+        "reads": [
+            "ritu",
+            "cfai",
+            "occu",
+            "cfoc"
+        ],
+        "writes": [
+            "cfai",
+            "ccur",
+            "cdar",
+            "cmor"
+        ]
+    },
+    {
+        "action": "Scavenge",
+        "description": "Uses the item as a tool to scavenge materials from the environment.",
+        "reads": [
+            "scav",
+            "perc"
+        ],
+        "writes": []
+    },
+    {
+        "action": "Mine",
+        "description": "Extracts ore or stone from a rock face. Scales with mining skill.",
+        "reads": [
+            "mine",
+            "strn"
+        ],
+        "writes": []
+    },
+    {
+        "action": "ChopWood",
+        "description": "Fells trees or breaks down wood for resources. Scales with lumberjacking and strength.",
+        "reads": [
+            "lumb",
+            "strn"
+        ],
+        "writes": []
+    },
+    {
+        "action": "HarvestHerb",
+        "description": "Gathers herbs from the environment. Scales with herbalism and perception.",
+        "reads": [
+            "herb",
+            "perc"
+        ],
+        "writes": []
+    },
+    {
+        "action": "Skin",
+        "description": "Skins a creature for hide and leather. Scales with skinning.",
+        "reads": [
+            "skin",
+            "dext"
+        ],
+        "writes": []
+    },
+    {
+        "action": "Butcher",
+        "description": "Processes a creature carcass for meat and parts. Scales with butchery.",
+        "reads": [
+            "butc",
+            "strn"
+        ],
+        "writes": []
+    },
+    {
+        "action": "Fish",
+        "description": "Uses the item to fish. Scales with fishing skill.",
+        "reads": [
+            "fish",
+            "perc"
+        ],
+        "writes": []
+    },
+    {
+        "action": "Hunt",
+        "description": "Uses the item while hunting. Scales with hunting and tracking.",
+        "reads": [
+            "hunt",
+            "trac",
+            "perc"
+        ],
+        "writes": []
+    },
+    {
+        "action": "TrackPrey",
+        "description": "Uses the item to track a creature or person. Scales with tracking and perception.",
+        "reads": [
+            "trac",
+            "perc"
+        ],
+        "writes": []
+    },
+    {
+        "action": "LockPick",
+        "description": "Picks a lock using this item. Scales with lockpicking and dexterity.",
+        "reads": [
+            "lock",
+            "dext"
+        ],
+        "writes": []
+    },
+    {
+        "action": "PickPocket",
+        "description": "Steals from a target. Scales with pickpocketing and dexterity.",
+        "reads": [
+            "pick",
+            "dext",
+            "stea"
+        ],
+        "writes": []
+    },
+    {
+        "action": "Forge",
+        "description": "Used at a forge to produce weapons or armour. Scales with weaponsmithing or armorsmithing.",
+        "reads": [
+            "blks",
+            "wpsm",
+            "arsm",
+            "strn"
+        ],
+        "writes": []
+    },
+    {
+        "action": "Read",
+        "description": "Reads the item to gain knowledge or trigger a lore event. Scales with reading and memory.",
+        "reads": [
+            "read",
+            "memo"
+        ],
+        "writes": [
+            "cdar",
+            "occu",
+            "rese"
+        ]
+    },
+    {
+        "action": "Appraise",
+        "description": "Assesses the value or nature of an item. Scales with appraisal skill.",
+        "reads": [
+            "appr",
+            "perc"
+        ],
+        "writes": []
+    },
+    {
+        "action": "Barter",
+        "description": "Uses the item in a trade negotiation. Scales with bartering.",
+        "reads": [
+            "bart",
+            "nego"
+        ],
+        "writes": []
+    },
+    {
+        "action": "Consume",
+        "description": "Consumes the item, triggering all its consumable effects.",
+        "reads": [],
+        "writes": []
+    },
+    {
+        "action": "Cannibalize",
+        "description": "Consumes human flesh. Restores vitality and reduces hunger but increases madness, corruption, and heresy.",
+        "reads": [
+            "cann",
+            "chng",
+            "cmad",
+            "ccor",
+            "cher"
+        ],
+        "writes": [
+            "cvit",
+            "chng",
+            "cmad",
+            "ccor",
+            "cher",
+            "cstr"
+        ]
+    },
+    {
+        "action": "Bloodlet",
+        "description": "Intentionally draws blood for medical or ritual purposes. Reduces fever and infection at cost of blood.",
+        "reads": [
+            "blst",
+            "faid",
+            "cbld"
+        ],
+        "writes": [
+            "cbld",
+            "cfvr",
+            "cinf"
+        ]
+    },
+    {
+        "action": "Obsess",
+        "description": "Triggers obsessive behaviour linked to the item. Increases focus and obsession at cost of sanity.",
+        "reads": [
+            "obse",
+            "csan"
+        ],
+        "writes": [
+            "cfoc",
+            "obse",
+            "csan",
+            "cmad"
+        ]
+    },
+    {
+        "action": "TempBoostStrength",
+        "description": "Temporarily increases strength. May cause pain or fatigue when it wears off.",
+        "reads": [
+            "strn"
+        ],
+        "writes": [
+            "strn",
+            "cpai",
+            "cfat"
+        ]
+    },
+    {
+        "action": "TempBoostAgility",
+        "description": "Temporarily increases agility and evasion.",
+        "reads": [
+            "agil"
+        ],
+        "writes": [
+            "agil",
+            "evas"
+        ]
+    },
+    {
+        "action": "TempBoostPerception",
+        "description": "Temporarily sharpens perception and accuracy.",
+        "reads": [
+            "perc"
+        ],
+        "writes": [
+            "perc",
+            "accu"
+        ]
+    },
+    {
+        "action": "TempBoostConstitution",
+        "description": "Temporarily bolsters constitution, increasing resistance to disease and infection.",
+        "reads": [
+            "cons"
+        ],
+        "writes": [
+            "cons",
+            "ires",
+            "dres"
+        ]
+    },
+    {
+        "action": "TempBoostWillpower",
+        "description": "Temporarily strengthens willpower, resisting madness and possession.",
+        "reads": [
+            "cwil"
+        ],
+        "writes": [
+            "cwil",
+            "mres",
+            "poss"
+        ]
+    },
+    {
+        "action": "TempBoostFaith",
+        "description": "Temporarily heightens faith, enhancing blessings and prayer effectiveness.",
+        "reads": [
+            "cfai"
+        ],
+        "writes": [
+            "cfai",
+            "hers",
+            "corr"
+        ]
+    },
+    {
+        "action": "TempReduceCorruptionRate",
+        "description": "Temporarily slows corruption accumulation.",
+        "reads": [
+            "ccor",
+            "corr"
+        ],
+        "writes": [
+            "corr"
+        ]
+    },
+    {
+        "action": "TempBoostArmour",
+        "description": "Temporarily increases armour rating.",
+        "reads": [
+            "armr"
+        ],
+        "writes": [
+            "armr"
+        ]
+    },
+    {
+        "action": "TempBoostCritChance",
+        "description": "Temporarily increases critical hit chance.",
+        "reads": [
+            "crit"
+        ],
+        "writes": [
+            "crit"
+        ]
+    },
+    {
+        "action": "TempBoostInitiative",
+        "description": "Temporarily increases initiative, acting first in combat.",
+        "reads": [
+            "init"
+        ],
+        "writes": [
+            "init"
+        ]
+    },
+    {
+        "action": "TempBoostMovement",
+        "description": "Temporarily increases movement speed.",
+        "reads": [
+            "move"
+        ],
+        "writes": [
+            "move"
+        ]
+    },
+    {
+        "action": "TempBoostCarryCapacity",
+        "description": "Temporarily increases carry capacity.",
+        "reads": [
+            "carr"
+        ],
+        "writes": [
+            "carr"
+        ]
+    },
+    {
+        "action": "TempSuppressPain",
+        "description": "Heavily suppresses pain at the cost of perception and reflexes.",
+        "reads": [
+            "cpai",
+            "perc",
+            "refl"
+        ],
+        "writes": [
+            "cpai",
+            "perc",
+            "refl"
+        ]
+    },
+    {
+        "action": "TempSuppressFear",
+        "description": "Suppresses fear and stress temporarily. Withdrawal increases stress when it ends.",
+        "reads": [
+            "fres",
+            "cstr"
+        ],
+        "writes": [
+            "fres",
+            "cstr"
+        ]
+    },
+    {
+        "action": "InduceMadness",
+        "description": "Deliberately triggers madness, used in rituals or dark magic. Increases dark insight.",
+        "reads": [
+            "cmad",
+            "cdar"
+        ],
+        "writes": [
+            "cmad",
+            "cdar",
+            "csan"
+        ]
+    },
+    {
+        "action": "InduceVision",
+        "description": "Causes prophetic or eldritch visions. Increases dark insight and may reveal hidden content.",
+        "reads": [
+            "cdar",
+            "divi",
+            "drea"
+        ],
+        "writes": [
+            "cdar",
+            "cmad",
+            "cfoc"
+        ]
+    },
+    {
+        "action": "SealRelic",
+        "description": "Seals a relic to contain its corrupting influence. Requires ritual lore.",
+        "reads": [
+            "reli",
+            "ritu",
+            "cfai"
+        ],
+        "writes": [
+            "ccor"
+        ]
+    },
+    {
+        "action": "UnseealRelic",
+        "description": "Breaks the seal on a relic, unleashing its power and corruption.",
+        "reads": [
+            "reli",
+            "occu"
+        ],
+        "writes": [
+            "ccor",
+            "cdar",
+            "cfoc"
+        ]
+    },
+    {
+        "action": "Vigil",
+        "description": "Keeps vigil over a body or location overnight. Restores faith and morale but costs fatigue.",
+        "reads": [
+            "vigi",
+            "cfai",
+            "cfat"
+        ],
+        "writes": [
+            "cfai",
+            "cmor",
+            "cfat"
+        ]
+    },
+    {
+        "action": "Pilgrimage",
+        "description": "Marks an item used during pilgrimage. Reduces heresy and corruption over time.",
+        "reads": [
+            "pilg",
+            "cfai"
+        ],
+        "writes": [
+            "cher",
+            "ccor",
+            "cmor"
+        ]
+    },
+    {
+        "action": "DetectHeresy",
+        "description": "Uses the item to detect heretical influence on a target or area.",
+        "reads": [
+            "here",
+            "cfai",
+            "perc"
+        ],
+        "writes": []
+    },
+    {
+        "action": "Sabotage",
+        "description": "Uses the item to sabotage a mechanism or structure. Scales with sabotage skill.",
+        "reads": [
+            "saba",
+            "engi",
+            "dext"
+        ],
+        "writes": []
+    },
+    {
+        "action": "Forge_Document",
+        "description": "Forges a document or seal. Scales with forgery and writing.",
+        "reads": [
+            "forg",
+            "writ"
+        ],
+        "writes": []
+    },
+    {
+        "action": "Smuggle",
+        "description": "Conceals the item for smuggling. Scales with smuggling and stealth.",
+        "reads": [
+            "smug",
+            "stea"
+        ],
+        "writes": []
+    }
+]

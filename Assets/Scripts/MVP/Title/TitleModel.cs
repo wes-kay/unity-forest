@@ -2,8 +2,6 @@ using System;
 using System.IO;
 using UnityEngine;
 
-namespace SoftKitty.MVP.Title
-{
     public enum FadeDirection { In, Out }
 
     public class TitleModel
@@ -77,4 +75,3 @@ namespace SoftKitty.MVP.Title
 
         public void StartGame() => IsGameActive = true;
     }
-}

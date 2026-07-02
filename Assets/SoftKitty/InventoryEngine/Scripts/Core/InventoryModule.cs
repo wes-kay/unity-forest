@@ -29,6 +29,19 @@ namespace SoftKitty.InventoryEngine
             mEquipment = null;
             mInventory = null;
         }
+
+        public override bool isDirty
+        {
+            get
+            {
+                foreach (var inven in Inventory)
+                {
+                    if (inven.isDirty) return true;
+                }
+                return false;
+            }
+        }
+
         public override float GetAttributeValue(int _id)
         {
             if (GetEquipment() != null) return GetEquipment().GetAttributeValue(_id);
@@ -108,6 +121,22 @@ namespace SoftKitty.InventoryEngine
         public InventoryData GetAnyInventoryData()
         {
             if (Inventory.Count > 0) return Inventory[0];
+            return null;
+        }
+
+        /// <summary>
+        /// Retrieve an [InventoryData] of this entity by its name.(case-sensitive)
+        /// </summary>
+        /// <returns></returns>
+        public InventoryData GetInventoryDataByName(string _name)
+        {
+            foreach (var obj in Inventory)
+            {
+                if (obj.Name==_name)
+                {
+                    return obj;
+                }
+            }
             return null;
         }
 

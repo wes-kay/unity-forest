@@ -85,6 +85,14 @@ namespace SoftKitty.InventoryEngine
         /// </summary>
         public float MaxiumCarryWeight = 1000F;
         /// <summary>
+        /// If this list is non-empty, this inventory will only accept items with the tag in the list.
+        /// </summary>
+        public List<string> OnlyAcceptTags = new List<string>();
+        /// <summary>
+        /// If this list is non-empty, this inventory will only accept items of the category(ID) in the list.
+        /// </summary>
+        public List<int> OnlyAcceptCategories = new List<int>();
+        /// <summary>
         /// This multiplier is applied when selling items. For example, a merchant NPC with a SellPriceMultiplier of 1.2 will sell an item priced at 1000 for 1200.
         /// </summary>
         public float SellPriceMultiplier = 1F;
@@ -179,6 +187,7 @@ namespace SoftKitty.InventoryEngine
         private bool mCraftingFailed = false;
         private bool mCrafting = false;
         private float _weight = 0F;
+        private bool _dirty = false;
         private CraftingStateCallback OnCraftingStateChange;
         #endregion
 
@@ -211,6 +220,16 @@ namespace SoftKitty.InventoryEngine
             foreach (var obj in SpecificPriceMultiplier)
             {
                 _copy.SpecificPriceMultiplier.Add(obj);
+            }
+            _copy.OnlyAcceptTags = new List<string>();
+            foreach (var obj in OnlyAcceptTags)
+            {
+                _copy.OnlyAcceptTags.Add(obj);
+            }
+            _copy.OnlyAcceptCategories = new List<int>();
+            foreach (var obj in OnlyAcceptCategories)
+            {
+                _copy.OnlyAcceptCategories.Add(obj);
             }
             _copy.TradeAllItems = this.TradeAllItems;
             _copy.TradeList = new List<int>();
@@ -651,6 +670,17 @@ namespace SoftKitty.InventoryEngine
 
 
         /// <summary>
+        /// Retrieves whether this Invetory has been modified, a save action from EntityManager will clear this flag.
+        /// </summary>
+        public bool isDirty
+        {
+            get
+            {
+                return _dirty;
+            }
+        }
+
+        /// <summary>
         /// Retrieves the total value of an attribute by its uid from all equipped items and the base stats. 
         /// </summary>
         /// <param name="_attributeuid"></param>
@@ -851,6 +881,7 @@ namespace SoftKitty.InventoryEngine
         public void AddCurrency(int _type, int _add)
         {
             Currency.AddCurrency(_type, _add);
+            _dirty = true;
         }
 
         /// <summary>
@@ -861,6 +892,7 @@ namespace SoftKitty.InventoryEngine
         public void SetCurrency(int _type, int _value)
         {
             Currency.SetCurrency(_type, _value);
+            _dirty = true;
         }
 
 
@@ -957,6 +989,10 @@ namespace SoftKitty.InventoryEngine
             _saveRoot.EntityUid = EntityUid;
             _saveRoot.Type = Type;
             _saveRoot.InventorySize = InventorySize;
+            _saveRoot.OnlyAcceptCategories = new List<int>();
+            for (int i = 0; i < OnlyAcceptCategories.Count; i++) _saveRoot.OnlyAcceptCategories.Add(OnlyAcceptCategories[i]);
+            _saveRoot.OnlyAcceptTags = new List<string>();
+            for (int i = 0; i < OnlyAcceptTags.Count; i++) _saveRoot.OnlyAcceptTags.Add(OnlyAcceptTags[i]);
             _saveRoot.MaxiumCarryWeight = MaxiumCarryWeight;
             _saveRoot.SellPriceMultiplier = SellPriceMultiplier;
             _saveRoot.BuyPriceMultiplier = BuyPriceMultiplier;
@@ -967,6 +1003,7 @@ namespace SoftKitty.InventoryEngine
             for (int i = 0; i < TradeList.Count; i++) _saveRoot.TradeList.Add(TradeList[i]);
             _saveRoot.TradeCategoryList = new List<int>();
             for (int i = 0; i < TradeCategoryList.Count; i++) _saveRoot.TradeCategoryList.Add(TradeCategoryList[i]);
+            _dirty = false;
             return _saveRoot;
         }
 
@@ -986,6 +1023,10 @@ namespace SoftKitty.InventoryEngine
             BuyPriceMultiplier = _saveRoot.BuyPriceMultiplier;
             SpecificPriceMultiplier = new List<Vector3>();
             for (int i = 0; i < _saveRoot.SpecificPriceMultiplier.Count; i++) SpecificPriceMultiplier.Add(_saveRoot.SpecificPriceMultiplier[i]);
+            OnlyAcceptTags = new List<string>();
+            for (int i = 0; i < _saveRoot.OnlyAcceptTags.Count; i++) OnlyAcceptTags.Add(_saveRoot.OnlyAcceptTags[i]);
+            OnlyAcceptCategories = new List<int>();
+            for (int i = 0; i < _saveRoot.OnlyAcceptCategories.Count; i++) OnlyAcceptCategories.Add(_saveRoot.OnlyAcceptCategories[i]);
             TradeAllItems = _saveRoot.TradeAllItems;
             TradeList = new List<int>();
             for (int i = 0; i < _saveRoot.TradeList.Count; i++) TradeList.Add(_saveRoot.TradeList[i]);
@@ -1018,7 +1059,7 @@ namespace SoftKitty.InventoryEngine
             }
             Currency.Reset();
             Currency.Init(_saveRoot.currency);
-
+            _dirty = false;
         }
 
 
@@ -1029,6 +1070,7 @@ namespace SoftKitty.InventoryEngine
         public void ItemChanged(Dictionary<Item, int> _changedItems)
         {
             CalWeight();
+            _dirty = true;
             if (mItemChangeCallbacks != null) mItemChangeCallbacks(_changedItems);
         }
 
@@ -1191,6 +1233,7 @@ namespace SoftKitty.InventoryEngine
         public void ClearHiddenItems()
         {
             HiddenStacks.Clear();
+            _dirty = true;
         }
 
 
@@ -1261,6 +1304,8 @@ namespace SoftKitty.InventoryEngine
         }
 
 
+
+
         /// <summary>
         /// Adds a specified number of items. Returns any items that could not be received (if any).
         /// </summary>
@@ -1273,8 +1318,12 @@ namespace SoftKitty.InventoryEngine
             {
                 return AddHiddenItem(_item, _number);
             }
-
+           
             InventoryStack _newStack = new InventoryStack(_item, _number);
+            if (!isItemAcceptable(_item))
+            {
+                return _newStack;
+            }
             //First find if there is any slot has same item to stack.
             for (int i = 0; i < Stacks.Count; i++)
             {
@@ -1328,6 +1377,10 @@ namespace SoftKitty.InventoryEngine
         public InventoryStack AddHiddenItem(Item _item, int _number = 1)
         {
             InventoryStack _newStack = new InventoryStack(_item, _number);
+            if (!isItemAcceptable(_item))
+            {
+                return _newStack;
+            }
             //First find if there is any slot has same item to stack.
             bool _foundSame = false;
             for (int i = 0; i < HiddenStacks.Count; i++)
@@ -1358,6 +1411,17 @@ namespace SoftKitty.InventoryEngine
             return _newStack;
         }
 
+        /// <summary>
+        /// Retrieves whether an item is acceptable by this inventory, the tag and category filter of this inventory will be applied to the result.
+        /// </summary>
+        /// <param name="_item"></param>
+        /// <returns></returns>
+        public bool isItemAcceptable(Item _item)
+        {
+            if (OnlyAcceptTags.Count == 0 && OnlyAcceptCategories.Count == 0) return true;
+            return (OnlyAcceptTags.Count == 0 || _item.isTagsMatchList(OnlyAcceptTags, false)) && (OnlyAcceptCategories.Count == 0 || OnlyAcceptCategories.Contains(_item.type));
+        }
+
 
         /// <summary>
         /// Moves an item from one index to another.
@@ -1367,6 +1431,7 @@ namespace SoftKitty.InventoryEngine
         public void MoveItem(int sourceIndex, int _targetIndex)
         {
             Stacks[sourceIndex] = Stacks[_targetIndex].Merge(Stacks[sourceIndex]);
+            _dirty = true;
         }
 
 
@@ -1378,6 +1443,7 @@ namespace SoftKitty.InventoryEngine
         /// <returns></returns>
         public InventoryStack Split(int sourceIndex, int _number)
         {
+            _dirty = true;
             //return the temp InventoryStack took from the source
             return Stacks[sourceIndex].Split(_number);
         }

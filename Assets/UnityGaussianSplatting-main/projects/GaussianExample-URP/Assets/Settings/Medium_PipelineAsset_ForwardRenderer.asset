@@ -40,7 +40,8 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: -6851802070553482712}
   - {fileID: 8522462406908265320}
-  m_RendererFeatureMap: 28aa5fb95182e9a0684363b767de4576
+  - {fileID: 573127741427242210}
+  m_RendererFeatureMap: 28aa5fb95182e9a0684363b767de4576e254b1eea428f407
   m_UseNativeRenderPass: 0
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
@@ -69,6 +70,21 @@ MonoBehaviour:
   m_DepthTextureFormat: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 1
+--- !u!114 &573127741427242210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8e1eeeaa7fba944fb8e39c0af65b268, type: 3}
+  m_Name: TranslucentImageBlurSource
+  m_EditorClassIdentifier: LeTai.TranslucentImage.UniversalRP::LeTai.Asset.TranslucentImage.UniversalRP.TranslucentImageBlurSource
+  m_Active: 1
+  renderOrder: 0
+  canvasDisappearWorkaround: 0
 --- !u!114 &8522462406908265320
 MonoBehaviour:
   m_ObjectHideFlags: 0

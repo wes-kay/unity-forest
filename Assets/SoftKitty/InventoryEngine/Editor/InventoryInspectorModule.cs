@@ -447,6 +447,46 @@ namespace SoftKitty.InventoryEngine
 
                         EditorUtils.TextField(ref _inventoryModule.Inventory[i].Name, new GUIContent("Display Name:", "This will be the name shows as the title of the window."), 40, 150, true);
 
+                        if (EditorUtils.TitleBox(new GUIContent(" Tag Filter (" + (_inventoryModule.Inventory[i].OnlyAcceptTags.Count > 0 ? _inventoryModule.Inventory[i].OnlyAcceptTags.Count.ToString() : "None") + ")", "If this list is non-empty, this inventory will only accept items with the tag in the list."), EditorUtils._activeColor, 40, true, "Add", 100))
+                        {
+                            _inventoryModule.Inventory[i].OnlyAcceptTags.Add("Input Tag Here");
+                        }
+                        for (int u=0;u< _inventoryModule.Inventory[i].OnlyAcceptTags.Count;u++) {
+                            EditorUtils.Pre(new GUIContent( "#"+u.ToString()), 60, 30);
+                            GUI.backgroundColor = EditorUtils._tagColor;
+                            _inventoryModule.Inventory[i].OnlyAcceptTags[u] = GUILayout.TextArea(_inventoryModule.Inventory[i].OnlyAcceptTags[u], GUILayout.Width(150), GUILayout.Height(20));
+                            GUI.backgroundColor = EditorUtils._black;
+                            if (GUILayout.Button("X", GUILayout.Width(20)))
+                            {
+                                _inventoryModule.Inventory[i].OnlyAcceptTags.RemoveAt(u);
+                                EditorGUI.FocusTextInControl(null);
+                                break;
+                            }
+                            EditorUtils.ResetColor();
+                            EditorUtils.End(40);
+                        }
+
+                        if (EditorUtils.TitleBox(new GUIContent(" Category Filter (" + (_inventoryModule.Inventory[i].OnlyAcceptCategories.Count > 0 ? _inventoryModule.Inventory[i].OnlyAcceptCategories.Count.ToString() : "None") + ")", "If this list is non-empty, this inventory will only accept items of the category(ID) in the list."), EditorUtils._activeColor, 40, true, "Add", 100))
+                        {
+                            _inventoryModule.Inventory[i].OnlyAcceptCategories.Add(0);
+                        }
+                        for (int u = 0; u < _inventoryModule.Inventory[i].OnlyAcceptCategories.Count; u++)
+                        {
+                            EditorUtils.Pre(new GUIContent("#" + u.ToString()), 60, 30);
+                            _inventoryModule.Inventory[i].OnlyAcceptCategories[u] = Mathf.Clamp(_inventoryModule.Inventory[i].OnlyAcceptCategories[u], 0, ItemObject.instance.itemTypes.Count - 1);
+                            GUI.backgroundColor = ItemObject.instance.itemTypes[_inventoryModule.Inventory[i].OnlyAcceptCategories[u]].color;
+                            _inventoryModule.Inventory[i].OnlyAcceptCategories[u] = EditorGUILayout.Popup("", _inventoryModule.Inventory[i].OnlyAcceptCategories[u], ItemObject.instance.ItemCategoryNames, GUILayout.Width(150));
+                            GUI.backgroundColor = EditorUtils._black;
+                            if (GUILayout.Button("X", GUILayout.Width(20)))
+                            {
+                                _inventoryModule.Inventory[i].OnlyAcceptCategories.RemoveAt(u);
+                                EditorGUI.FocusTextInControl(null);
+                                break;
+                            }
+                            EditorUtils.ResetColor();
+                            EditorUtils.End(40);
+                        }
+
                         if (_inventoryModule.Inventory[i].Type == InventoryData.HolderType.Merchant)
                         {
                             EditorUtils.TitleButton(new GUIContent(" Merchant Settings", "The settings for Merchant."), ref _inventoryModule.Inventory[i].uiMerchantExpand, 40, false, 40);
@@ -876,6 +916,7 @@ namespace SoftKitty.InventoryEngine
                                         else
                                         {
                                             _inventoryModule.Inventory[i].Stacks[u] = new InventoryStack(ItemObject.instance.GetItemByIndex(_itemIndex - 1), Mathf.Max(1, _inventoryModule.Inventory[i].Stacks[u].Number));
+                                            _inventoryModule.Inventory[i].Stacks[u].Empty = false;
                                             _valueChanged = true;
                                         }
                                     }
@@ -889,7 +930,7 @@ namespace SoftKitty.InventoryEngine
 
                                     GUI.backgroundColor = EditorUtils._titleColor;
                                     _inventoryModule.Inventory[i].Stacks[u].Number = Mathf.FloorToInt(GUILayout.HorizontalSlider(_inventoryModule.Inventory[i].Stacks[u].Number, 0, _maxStack, GUILayout.Width(60)));
-                                    if (_item == 0 && _inventoryModule.Inventory[i].Stacks[u].Number != 0)
+                                    if (_itemIndex == 0 && _inventoryModule.Inventory[i].Stacks[u].Number != 0)
                                     {
                                         _inventoryModule.Inventory[i].Stacks[u].Number = 0;
                                         _valueChanged = true;
@@ -1178,7 +1219,7 @@ namespace SoftKitty.InventoryEngine
 
                                     GUI.backgroundColor = EditorUtils._titleColor;
                                     _inventoryModule.Inventory[i].HiddenStacks[u].Number = Mathf.FloorToInt(GUILayout.HorizontalSlider(_inventoryModule.Inventory[i].HiddenStacks[u].Number, 0, _maxStack, GUILayout.Width(60)));
-                                    if (_item == 0 && _inventoryModule.Inventory[i].HiddenStacks[u].Number != 0)
+                                    if (_itemIndex == 0 && _inventoryModule.Inventory[i].HiddenStacks[u].Number != 0)
                                     {
                                         _inventoryModule.Inventory[i].HiddenStacks[u].Number = 0;
                                         _valueChanged = true;

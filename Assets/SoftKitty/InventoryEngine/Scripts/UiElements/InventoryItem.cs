@@ -198,7 +198,7 @@ namespace SoftKitty.InventoryEngine
                                 }
                                 return;
                             }
-
+                            if (Holder != null && _source.GetItem()!=null && !Holder.isItemAcceptable(_source.GetItem())) return;
                             if (LimitedByTag.Length > 0 && !_source.isTagMatchText(LimitedByTag)) return;
                             if (_source.LimitedByTag.Length > 0 && !isTagMatchText(_source.LimitedByTag) && !isEmpty()) return;
                             if (!RecieveDragging) return;

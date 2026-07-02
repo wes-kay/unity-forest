@@ -476,6 +476,7 @@ namespace SoftKitty.InventoryEngine
         void RefreshCraftingArea()
         {
             if (SelectedBlueprint == -1) return;
+            RefreshCraftingMaterial();
             bool _allMatch = true;
             for (int i = 0; i < CraftingMaterialItems.Length; i++)
             {
@@ -709,26 +710,41 @@ namespace SoftKitty.InventoryEngine
             }
             return true;
         }
-        
-        public void OnBlueprintClick(int _index, int _button)//When player click a blueprint
+
+
+        private void RefreshCraftingMaterial()
         {
-            if (Crafting) return;
-            SelectedBlueprint = _index;
-            SoundManager.Play2D("paper");
-            for (int i=0;i< BluePrintList.Count;i++) {
-                BluePrintList[i].ToggleOutline(i== SelectedBlueprint);
-            }
-            CraftingResultItem.SetAppearance(ItemObject.instance.TryGetItem(BluePrintList[SelectedBlueprint].GetItemId()), true,false);
-            CraftingResultItem.SetItemId(BluePrintList[SelectedBlueprint].GetItemId());
-
-            CraftingNumberPanel.Initialize(1, ItemObject.instance.TryGetItem(BluePrintList[SelectedBlueprint].GetItemId()).maxiumStack);
-
             CraftingMaterialRequired.Clear();
-            CraftingMaterialRequired.AddRange( ItemObject.instance.TryGetItem(BluePrintList[SelectedBlueprint].GetItemId()).craftMaterials);
-            for (int i=0;i< CraftingMaterialItems.Length;i++) {
+            CraftingMaterialRequired.AddRange(ItemObject.instance.TryGetItem(BluePrintList[SelectedBlueprint].GetItemId()).craftMaterials);
+            for (int i = 0; i < CraftingMaterialRequired.Count; i++)
+            {
+                if (CraftingMaterialRequired[i].x<0) {
+                    string _tag = ItemObject.instance.TryGetItem(BluePrintList[SelectedBlueprint].GetItemId()).craftMaterialTags[i];
+                    List<int> _matchingList = new List<int>();
+                    foreach (var obj in ItemObject.instance.items)
+                    {
+                        if (obj.isTagMatchText(_tag)) _matchingList.Add(obj.id);
+                    }
+                    if (_matchingList.Count > 0) {
+                        CraftingMaterialRequired[i] = new Vector2(_matchingList[0], CraftingMaterialRequired[i].y);
+                    } else {
+                        Debug.LogError("No item matched with tag:" + _tag);
+                    }
+                    bool _matched = false;
+                    foreach (var obj in _matchingList) {
+                        if (!_matched && Holder.GetItemNumber(obj) > 0)
+                        {
+                            CraftingMaterialRequired[i] = new Vector2(obj, CraftingMaterialRequired[i].y);
+                            _matched = true;
+                        }
+                    }
+                }
+            }
+            for (int i = 0; i < CraftingMaterialItems.Length; i++)
+            {
                 if (i < CraftingMaterialRequired.Count)
                 {
-                    CraftingMaterialItems[i].SetAppearance(ItemObject.instance.TryGetItem(Mathf.FloorToInt(CraftingMaterialRequired[i].x)), true,false);
+                    CraftingMaterialItems[i].SetAppearance(ItemObject.instance.TryGetItem(Mathf.FloorToInt(CraftingMaterialRequired[i].x)), true, false);
                     CraftingMaterialItems[i].SetItemId(Mathf.FloorToInt(CraftingMaterialRequired[i].x));
                     CraftingMaterialItems[i].gameObject.SetActive(true);
                     CraftingMaterialNumText[i].gameObject.SetActive(true);
@@ -742,7 +758,19 @@ namespace SoftKitty.InventoryEngine
                     CraftingMaterialIndicators[i].gameObject.SetActive(false);
                 }
             }
+        }
 
+        public void OnBlueprintClick(int _index, int _button)//When player click a blueprint
+        {
+            if (Crafting) return;
+            SelectedBlueprint = _index;
+            SoundManager.Play2D("paper");
+            for (int i=0;i< BluePrintList.Count;i++) {
+                BluePrintList[i].ToggleOutline(i== SelectedBlueprint);
+            }
+            CraftingResultItem.SetAppearance(ItemObject.instance.TryGetItem(BluePrintList[SelectedBlueprint].GetItemId()), true,false);
+            CraftingResultItem.SetItemId(BluePrintList[SelectedBlueprint].GetItemId());
+            CraftingNumberPanel.Initialize(1, ItemObject.instance.TryGetItem(BluePrintList[SelectedBlueprint].GetItemId()).maxiumStack);
             CraftingProgressRoot.sizeDelta = new Vector2(93F+ (CraftingMaterialRequired.Count-1)*82F, 25F);
             RefreshCraftingArea();
             RefreshInventoryItems();

@@ -20,3 +20,10 @@ AudioImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 360770
+  packageName: Master Inventory Engine Pro - Crafting/Loot/Trade/Skills/HotBar
+  packageVersion: 1.10
+  assetPath: Assets/SoftKitty/InventoryEngine/Resources/Sounds/Merchant.wav
+  uploadId: 935924

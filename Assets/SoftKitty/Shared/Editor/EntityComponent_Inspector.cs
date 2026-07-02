@@ -77,6 +77,7 @@ namespace SoftKitty
                     myTarget.uid = GameManager.EntityManagerData.EntityUidList[_selEntity];
                     myTarget.RefreshData();
                     oldHash = GameManager.EntityManagerData.Hash;
+                    _valueChanged = true;
                 }
                 if (GUILayout.Button(EditorUtils.TextHint("Manage", "Open the Entity Manager to edit this entity¡¯s data."), GUILayout.Width(100)))
                 {

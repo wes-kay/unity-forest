@@ -23,7 +23,7 @@ namespace SoftKitty
             SGD_Settings myTarget = (SGD_Settings)target;
             EditorUtils.TitleLogo(EditorUtils.GetTexture(EditorIcon.DataLogo), 0);
             EditorGUILayout.Separator();
-            EditorUtils.Document("core/general/SGD_Settings");
+            EditorUtils.Document("core/general/SGD_Settings",true);
             EditorGUILayout.Separator();
 
             string[] debugLevelText = new string[4] {"None", "Errors Only", "Critical Only", "Full Logging" };

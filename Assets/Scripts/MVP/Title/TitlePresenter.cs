@@ -2,8 +2,6 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace SoftKitty.MVP.Title
-{
     public class TitlePresenter : MonoBehaviour
     {
         [Header("MVP Components")]
@@ -179,4 +177,3 @@ namespace SoftKitty.MVP.Title
             return gameSceneBuildIndex;
         }
     }
-}

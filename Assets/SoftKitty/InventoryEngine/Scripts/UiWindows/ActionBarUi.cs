@@ -265,6 +265,7 @@ namespace SoftKitty.InventoryEngine
             SetNumberText.text = (ActionSet+1).ToString();
             for (int i = 0; i < Slots.Length; i++)
             {
+                Slots[i].Enable = true;
                 Slots[i].Item.RegisterClickCallback(i, OnSlotClick);
                 Slots[i].Item.Outline.color = ItemObject.instance.ItemSelectedColor;
                 Slots[i].Item.Fav.GetComponent<Image>().color = ItemObject.instance.FavoriteColor;

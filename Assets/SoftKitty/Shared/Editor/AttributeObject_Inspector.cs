@@ -35,7 +35,7 @@ namespace SoftKitty
 
             
 
-            EditorUtils.Document("core/attributes/AttributeObject");
+            EditorUtils.Document("core/attributes/AttributeObject",true);
             EditorGUILayout.Separator();
 
             EditorUtils.Save();

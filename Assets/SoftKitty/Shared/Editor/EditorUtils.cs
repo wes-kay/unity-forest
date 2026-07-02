@@ -735,11 +735,12 @@ namespace SoftKitty
             _value = GUILayout.Toggle(_value, "", GUILayout.Width(25), GUILayout.Height(15));
             if (_helpUrl != "")
             {
-                GUI.backgroundColor = _buttonColor;
-                if (GUILayout.Button(GetTexture(EditorIcon.Help), GUILayout.Width(21), GUILayout.Height(19)))
+                GUI.backgroundColor = _buttonColor*0.5F;
+                if (GUILayout.Button("?", GUILayout.Width(21)))
                 {
                     Application.OpenURL("https://www.soft-kitty.com/docs/" + _helpUrl);
                 }
+                GUI.backgroundColor = Color.white;
             }
             End(_space);
         }

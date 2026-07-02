@@ -8305,6 +8305,7 @@ MonoBehaviour:
       maximumRandomAttributes: 5
       enchantments: 
       craftMaterials: []
+      craftMaterialTags: []
       actions: []
       tags: []
       customData: []
@@ -8330,6 +8331,8 @@ MonoBehaviour:
       KeepPostive: 1
     InventorySize: 10
     MaxiumCarryWeight: 1000
+    OnlyAcceptTags: []
+    OnlyAcceptCategories: 
     SellPriceMultiplier: 1
     BuyPriceMultiplier: 1
     SpecificPriceMultiplier: []
@@ -8787,6 +8790,7 @@ MonoBehaviour:
       maximumRandomAttributes: 5
       enchantments: 
       craftMaterials: []
+      craftMaterialTags: []
       actions: []
       tags: []
       customData: []
@@ -8812,6 +8816,8 @@ MonoBehaviour:
       KeepPostive: 1
     InventorySize: 10
     MaxiumCarryWeight: 1000
+    OnlyAcceptTags: []
+    OnlyAcceptCategories: 
     SellPriceMultiplier: 1
     BuyPriceMultiplier: 1
     SpecificPriceMultiplier: []
@@ -9031,6 +9037,7 @@ MonoBehaviour:
       maximumRandomAttributes: 5
       enchantments: 
       craftMaterials: []
+      craftMaterialTags: []
       actions: []
       tags: []
       customData: []
@@ -9056,6 +9063,8 @@ MonoBehaviour:
       KeepPostive: 1
     InventorySize: 10
     MaxiumCarryWeight: 1000
+    OnlyAcceptTags: []
+    OnlyAcceptCategories: 
     SellPriceMultiplier: 1
     BuyPriceMultiplier: 1
     SpecificPriceMultiplier: []
@@ -9275,6 +9284,7 @@ MonoBehaviour:
       maximumRandomAttributes: 5
       enchantments: 
       craftMaterials: []
+      craftMaterialTags: []
       actions: []
       tags: []
       customData: []
@@ -9300,6 +9310,8 @@ MonoBehaviour:
       KeepPostive: 1
     InventorySize: 10
     MaxiumCarryWeight: 1000
+    OnlyAcceptTags: []
+    OnlyAcceptCategories: 
     SellPriceMultiplier: 1
     BuyPriceMultiplier: 1
     SpecificPriceMultiplier: []
@@ -9705,6 +9717,7 @@ MonoBehaviour:
       maximumRandomAttributes: 5
       enchantments: 
       craftMaterials: []
+      craftMaterialTags: []
       actions: []
       tags: []
       customData: []
@@ -9730,6 +9743,8 @@ MonoBehaviour:
       KeepPostive: 1
     InventorySize: 10
     MaxiumCarryWeight: 1000
+    OnlyAcceptTags: []
+    OnlyAcceptCategories: 
     SellPriceMultiplier: 1
     BuyPriceMultiplier: 1
     SpecificPriceMultiplier: []
@@ -10209,6 +10224,7 @@ MonoBehaviour:
       maximumRandomAttributes: 5
       enchantments: 
       craftMaterials: []
+      craftMaterialTags: []
       actions: []
       tags: []
       customData: []
@@ -10234,6 +10250,8 @@ MonoBehaviour:
       KeepPostive: 1
     InventorySize: 10
     MaxiumCarryWeight: 1000
+    OnlyAcceptTags: []
+    OnlyAcceptCategories: 
     SellPriceMultiplier: 1
     BuyPriceMultiplier: 1
     SpecificPriceMultiplier: []
@@ -10805,6 +10823,7 @@ MonoBehaviour:
       maximumRandomAttributes: 5
       enchantments: 
       craftMaterials: []
+      craftMaterialTags: []
       actions: []
       tags: []
       customData: []
@@ -10830,6 +10849,8 @@ MonoBehaviour:
       KeepPostive: 1
     InventorySize: 10
     MaxiumCarryWeight: 1000
+    OnlyAcceptTags: []
+    OnlyAcceptCategories: 
     SellPriceMultiplier: 1
     BuyPriceMultiplier: 1
     SpecificPriceMultiplier: []
@@ -10964,7 +10985,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 135.45, y: -15.8}
-  m_SizeDelta: {x: 108, y: 27.3}
+  m_SizeDelta: {x: 0, y: 27.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4423946314357555970
 CanvasRenderer:
@@ -11250,6 +11271,7 @@ MonoBehaviour:
       maximumRandomAttributes: 5
       enchantments: 
       craftMaterials: []
+      craftMaterialTags: []
       actions: []
       tags: []
       customData: []
@@ -11275,6 +11297,8 @@ MonoBehaviour:
       KeepPostive: 1
     InventorySize: 10
     MaxiumCarryWeight: 1000
+    OnlyAcceptTags: []
+    OnlyAcceptCategories: 
     SellPriceMultiplier: 1
     BuyPriceMultiplier: 1
     SpecificPriceMultiplier: []
@@ -11529,6 +11553,7 @@ MonoBehaviour:
       maximumRandomAttributes: 5
       enchantments: 
       craftMaterials: []
+      craftMaterialTags: []
       actions: []
       tags: []
       customData: []
@@ -11554,6 +11579,8 @@ MonoBehaviour:
       KeepPostive: 1
     InventorySize: 10
     MaxiumCarryWeight: 1000
+    OnlyAcceptTags: []
+    OnlyAcceptCategories: 
     SellPriceMultiplier: 1
     BuyPriceMultiplier: 1
     SpecificPriceMultiplier: []
@@ -13234,6 +13261,7 @@ MonoBehaviour:
       maximumRandomAttributes: 5
       enchantments: 
       craftMaterials: []
+      craftMaterialTags: []
       actions: []
       tags: []
       customData: []
@@ -13259,6 +13287,8 @@ MonoBehaviour:
       KeepPostive: 1
     InventorySize: 10
     MaxiumCarryWeight: 1000
+    OnlyAcceptTags: []
+    OnlyAcceptCategories: 
     SellPriceMultiplier: 1
     BuyPriceMultiplier: 1
     SpecificPriceMultiplier: []
@@ -14359,6 +14389,15 @@ MonoBehaviour:
   TitleText: {fileID: 5444479228904857084}
   PlayerNameText: {fileID: 4423946314357555971}
   PlayerLevelText: {fileID: 4423946314044082519}
+  mEquipHolder:
+    rid: -2
+  mInventoryData:
+    rid: -2
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!114 &7678487653515317671
 MonoBehaviour:
   m_ObjectHideFlags: 0

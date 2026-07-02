@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c305328e3ac9b4ebeacb5d0d1bbb77, type: 3}
   m_Name: GameItemObject
   m_EditorClassIdentifier: Assembly-CSharp::SoftKitty.ItemObject
-  Hash: fec6b20bfb13397099dc14098edeb44a
+  Hash: 5e87f1e2567e98cef3a340effebd8261
   IdManager:
     idToKey:
     - id: 0
@@ -117,6 +117,8 @@ MonoBehaviour:
       key: leather_shield
     - id: 50
       key: shuriken
+    - id: 51
+      key: knight_armor
     uiFold: 0
   SearchText: 
   SearchType: 0
@@ -128,7 +130,7 @@ MonoBehaviour:
   _attExpand: 0
   _attViewExpand: 0
   _entExpand: 0
-  _craftExpand: 0
+  _craftExpand: 1
   _upgradeExpand: 0
   _itemExpand: 1
   _socketingExpand: 0
@@ -140,8 +142,23 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 1}
     visible: 1
   itemQuality:
-  - name: Default Quality0
+  - name: Blessed
+    color: {r: 0.9607843, g: 0.9019608, b: 0.6392157, a: 1}
+    visible: 1
+  - name: Ordained
+    color: {r: 0.78039217, g: 0.827451, b: 1, a: 1}
+    visible: 1
+  - name: Neutral
     color: {r: 1, g: 1, b: 1, a: 1}
+    visible: 1
+  - name: Forsaken
+    color: {r: 0.41960785, g: 0.2901961, b: 0.18039216, a: 1}
+    visible: 1
+  - name: Desecrated
+    color: {r: 0.47843137, g: 0.12156863, b: 0.23921569, a: 1}
+    visible: 1
+  - name: Abominable
+    color: {r: 0.16862746, g: 0, b: 0.2, a: 1}
     visible: 1
   clickSettings: []
   itemAttributeObjectHash: 
@@ -177,6 +194,7 @@ MonoBehaviour:
     maximumRandomAttributes: 5
     enchantments: 
     craftMaterials: []
+    craftMaterialTags: []
     actions: []
     tags: []
     customData: []
@@ -187,7 +205,7 @@ MonoBehaviour:
     socketingTag: []
     fold: 0
   - uid: Item1
-    name: New Item1
+    name: Heart of a Fallen Man
     description: No description yet.
     type: 0
     icon: {fileID: 0}
@@ -196,30 +214,31 @@ MonoBehaviour:
     quality: 0
     tradeable: 1
     deletable: 1
-    useable: 0
-    consumable: 0
+    useable: 1
+    consumable: 1
     visible: 1
     price: 0
     currency: 0
-    maxiumStack: 99
+    maxiumStack: 1
     upgradeLevel: 0
-    weight: 0.1
+    weight: 0.3
     dropRates: 0
     favorite: 0
     attributes: []
     maximumRandomAttributes: 5
     enchantments: 
     craftMaterials: []
+    craftMaterialTags: []
     actions: []
     tags:
-    - Water
+    - Heart
     customData: []
     restrictionKey: 
     restrictionValue: 0
     socketingSlots: 0
     socketedItems: 
     socketingTag: []
-    fold: 1
+    fold: 0
   itemScriptableObjects: []
   DataMode: 0
   NameAttributeKey: name
@@ -242,8 +261,8 @@ MonoBehaviour:
   PlayerName: Player
   CraftingTime: 0.5
   EnhancingMaterials:
-  - {x: 0, y: 0}
-  - {x: 0, y: 0}
+  - {x: 0, y: 1}
+  - {x: 0, y: 1}
   EnhancingCurrencyType: 0
   EnhancingCurrencyNeed: 0
   EnableEnhancing: 1
