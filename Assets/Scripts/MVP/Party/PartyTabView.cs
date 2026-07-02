@@ -25,7 +25,7 @@ namespace Domain.MVP.Party
 
         [Header("Detail Subtab")]
         [Tooltip("Portrait image for the selected member.")]
-        public Image selectedPortrait;
+        public Image leftPortrait, selectedPortrait, rightPortrait;
 
         [Tooltip("Name text for the selected member.")]
         public TextMeshProUGUI selectedNameText;
@@ -46,6 +46,8 @@ namespace Domain.MVP.Party
         public event Action<string> OnMemberPortraitClicked;
 
         private PartyRosterDataSource _rosterDataSource;
+
+        public Button attributeButton, inventoryButton;
 
         public override void Initialize(TabModel model)
         {
@@ -133,6 +135,47 @@ namespace Domain.MVP.Party
 
             // TODO: Query CharacterAttributeService for the entity's attributes
             // and create rows from the result.
+        }
+
+        /// <summary>
+        /// Load and display a character portrait from Resources.
+        /// Path: characters/portrait/{characterName}
+        /// </summary>
+        public void ShowCharacterPortrait(string characterName)
+        {
+            if (string.IsNullOrEmpty(characterName))
+            {
+                ClearPortrait();
+                return;
+            }
+
+            string path = $"characters/portrait/{characterName}";
+
+            if (selectedPortrait != null)
+            {
+                var sprite = Resources.Load<Sprite>(path);
+                if (sprite != null)
+                {
+                    selectedPortrait.sprite = sprite;
+                    selectedPortrait.gameObject.SetActive(true);
+                }
+                else
+                {
+                    Debug.LogWarning($"[PartyTabView] Portrait not found for '{characterName}' at path: {path}");
+                    selectedPortrait.sprite = null;
+                    selectedPortrait.gameObject.SetActive(false);
+                }
+            }
+        }
+
+        /// <summary>Clear the character portrait display.</summary>
+        public void ClearPortrait()
+        {
+            if (selectedPortrait != null)
+            {
+                selectedPortrait.sprite = null;
+                selectedPortrait.gameObject.SetActive(false);
+            }
         }
     }
 }

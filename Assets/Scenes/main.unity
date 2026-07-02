@@ -119,51 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &31916884
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 31916886}
-  - component: {fileID: 31916885}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &31916885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 31916884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b7e88997ecbe5f47ae4dede22b7974a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CharacterSystem
-  AutoSave: 0
---- !u!4 &31916886
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 31916884}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.00047, y: -0, z: 0.65991}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &33577658
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,10 +388,6 @@ GameObject:
   - component: {fileID: 153064300}
   - component: {fileID: 153064299}
   - component: {fileID: 153064305}
-  - component: {fileID: 153064304}
-  - component: {fileID: 153064298}
-  - component: {fileID: 153064302}
-  - component: {fileID: 153064301}
   - component: {fileID: 153064303}
   m_Layer: 0
   m_Name: SceneContext
@@ -445,18 +396,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &153064298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153064297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00227fc53333c3f4b80f49c2d12f5b31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CharacterAttributeServiceInstaller
 --- !u!114 &153064299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,10 +411,6 @@ MonoBehaviour:
   _scriptableObjectInstallers: []
   _monoInstallers:
   - {fileID: 153064305}
-  - {fileID: 153064304}
-  - {fileID: 153064298}
-  - {fileID: 153064302}
-  - {fileID: 153064301}
   - {fileID: 153064303}
   _installerPrefabs: []
   _autoRun: 1
@@ -509,30 +444,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &153064301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153064297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7abc083bbfa0cb545be3d802cb0ba827, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PartyServiceInstaller
---- !u!114 &153064302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153064297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94a078ba8854b3c4e9850d6d7cdcbf3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CharacterRosterServiceInstaller
 --- !u!114 &153064303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,18 +464,6 @@ MonoBehaviour:
   settlementTabPrefab: {fileID: 3992237468678566414, guid: e36c615e1d05050479ea421e086c8e4f, type: 3}
   titlePrefab: {fileID: 0}
   showOnStart: 1
---- !u!114 &153064304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153064297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c53c71e6e861d243b9ac65a8d5f2f84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CharacterSystemInstaller
 --- !u!114 &153064305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,7 +493,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &203844587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2082,8 +1981,8 @@ Camera:
   m_GameObject: {fileID: 961739749}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3553,10 +3452,9 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 153064300}
+  - {fileID: 290880548}
   - {fileID: 961739753}
   - {fileID: 203844589}
   - {fileID: 1379906930}
-  - {fileID: 290880548}
   - {fileID: 790096653}
-  - {fileID: 31916886}
   - {fileID: 300644439}

@@ -774,10 +774,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -822,7 +822,6 @@ MonoBehaviour:
   activeTabColor: {r: 0.55, g: 0.12, b: 0.08, a: 1}
   normalTextColor: {r: 0.8, g: 0.75, b: 0.7, a: 1}
   activeTextColor: {r: 1, g: 0.9, b: 0.85, a: 1}
-  closeHoverColor: {r: 0.7, g: 0.15, b: 0.1, a: 1}
   canvasGroup: {fileID: 3350667594073686159}
 --- !u!225 &3350667594073686159
 CanvasGroup:
@@ -849,4 +848,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Domain.MVP.Hub.HubPresenter
   fadeDuration: 0.4
-  toggleKey: 13
