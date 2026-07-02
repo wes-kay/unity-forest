@@ -1158,8 +1158,7 @@ MonoBehaviour:
   SearchOptions:
   - uid
   - Tag
-  - name
-  SearchOptionHash: 105a824a4bfe5ed6a9f6e21b61c38ab0
+  SearchOptionHash: 4d0cae56e725904249db96cf3e8c8748
   CustomFold: 1
   ToolFold: 0
   references:

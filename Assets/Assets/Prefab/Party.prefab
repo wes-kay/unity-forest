@@ -101,7 +101,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571131965329746433}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -963,12 +963,16 @@ MonoBehaviour:
   selectedColor: {r: 0.6, g: 0.15, b: 0.1, a: 1}
   disabledColor: {r: 0.3, g: 0.3, b: 0.3, a: 1}
   rosterScrollRect: {fileID: 4847929836084761629}
-  selectedPortrait: {fileID: 1076565627092735043}
+  leftPortrait: {fileID: 3943622778042572121}
+  selectedPortrait: {fileID: 5887607041004400454}
+  rightPortrait: {fileID: 4627218757421072673}
   selectedNameText: {fileID: 4852434236531274926}
   hpBarFill: {fileID: 0}
   spBarFill: {fileID: 0}
   attributeContainer: {fileID: 0}
   attributeRowPrefab: {fileID: 0}
+  attributeButton: {fileID: 2775194411268336529}
+  inventoryButton: {fileID: 7423234461813085944}
 --- !u!114 &4695142924477255213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1012,8 +1016,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3294641522489034048}
   - {fileID: 4141960536153375262}
+  - {fileID: 3294641522489034048}
   m_Father: {fileID: 2851880083266809206}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

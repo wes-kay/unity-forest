@@ -52,6 +52,16 @@ namespace Domain.MVP.Party
             return _entities != null ? _entities.Count : 0;
         }
 
+        /// <summary>
+        /// Get the entity at the given index.
+        /// </summary>
+        public Entity GetEntityAt(int index)
+        {
+            if (_entities != null && index >= 0 && index < _entities.Count)
+                return _entities[index];
+            return null;
+        }
+
         public void SetCell(ICell cell, int index)
         {
             var partyCell = cell as PartyCell;
