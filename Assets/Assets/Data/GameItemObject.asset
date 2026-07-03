@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c305328e3ac9b4ebeacb5d0d1bbb77, type: 3}
   m_Name: GameItemObject
   m_EditorClassIdentifier: Assembly-CSharp::SoftKitty.ItemObject
-  Hash: 5e87f1e2567e98cef3a340effebd8261
+  Hash: d2ff736c5c7287a437ce31f705ccf3b4
   IdManager:
     idToKey:
     - id: 0
@@ -119,18 +119,104 @@ MonoBehaviour:
       key: shuriken
     - id: 51
       key: knight_armor
+    - id: 52
+      key: skill_1
+    - id: 53
+      key: skill_2
+    - id: 54
+      key: skill_3
+    - id: 55
+      key: skill_4
+    - id: 56
+      key: skill_5
+    - id: 57
+      key: skill_6
+    - id: 58
+      key: skill_7
+    - id: 59
+      key: skill_8
+    - id: 60
+      key: skill_9
+    - id: 61
+      key: skill_10
+    - id: 62
+      key: skill_11
+    - id: 63
+      key: skill_12
+    - id: 64
+      key: skill_13
+    - id: 65
+      key: skill_14
+    - id: 66
+      key: skill_15
+    - id: 67
+      key: skill_16
+    - id: 68
+      key: skill_17
+    - id: 69
+      key: skill_18
+    - id: 70
+      key: skill_19
+    - id: 71
+      key: skill_20
+    - id: 72
+      key: skill_21
+    - id: 73
+      key: skill_22
+    - id: 74
+      key: skill_23
+    - id: 75
+      key: skill_24
+    - id: 76
+      key: knight_gauntlet_blueprint
+    - id: 77
+      key: plate_armor_blueprint
+    - id: 78
+      key: great_axe_blueprint
+    - id: 79
+      key: knight_helmet_blueprint
+    - id: 80
+      key: iron_ore
+    - id: 81
+      key: knight_sword
+    - id: 82
+      key: king_sword
+    - id: 83
+      key: knight_boots
+    - id: 84
+      key: knight_cape
+    - id: 85
+      key: knight_gauntlet
+    - id: 86
+      key: knight_helmet
+    - id: 87
+      key: knight_shield
+    - id: 88
+      key: health_potion(l)_recipe
+    - id: 89
+      key: gem_of_strengh
+    - id: 90
+      key: gem_of_speed
+    - id: 91
+      key: gem_of_life
+    - id: 92
+      key: gem_of_precision
+    - id: 93
+      key: Skill laps
+    - id: 94
+      key: Item2
     uiFold: 0
   SearchText: 
   SearchType: 0
   _skinExpand: 0
   _generalExpand: 0
-  _typeExpand: 1
+  _typeExpand: 0
   _qualityExpand: 0
   _currencyExpand: 0
   _attExpand: 0
   _attViewExpand: 0
   _entExpand: 0
-  _craftExpand: 1
+  _craftExpand: 0
   _upgradeExpand: 0
   _itemExpand: 1
   _socketingExpand: 0
@@ -139,6 +225,9 @@ MonoBehaviour:
   lootPacks: []
   itemTypes:
   - name: Consumable
+    color: {r: 1, g: 1, b: 1, a: 1}
+    visible: 1
+  - name: Skills
     color: {r: 1, g: 1, b: 1, a: 1}
     visible: 1
   itemQuality:
@@ -239,6 +328,43 @@ MonoBehaviour:
     socketedItems: 
     socketingTag: []
     fold: 0
+  - uid: Skill laps
+    name: Heart
+    description: No description yet.
+    type: 0
+    icon: {fileID: 2800000, guid: 66995b6b61aed864daa956ae255d7fee, type: 3}
+    iconLoadMethod: 0
+    iconPath: 
+    quality: 2
+    tradeable: 1
+    deletable: 0
+    useable: 1
+    consumable: 0
+    visible: 1
+    price: 0
+    currency: 0
+    maxiumStack: 1
+    upgradeLevel: 0
+    weight: 0.3
+    dropRates: 0
+    favorite: 0
+    attributes: []
+    maximumRandomAttributes: 5
+    enchantments: 
+    craftMaterials: []
+    craftMaterialTags: []
+    actions:
+    - Skill_1
+    tags:
+    - Warrior
+    - Skills
+    customData: []
+    restrictionKey: 
+    restrictionValue: 0
+    socketingSlots: 0
+    socketedItems: 
+    socketingTag: []
+    fold: 1
   itemScriptableObjects: []
   DataMode: 0
   NameAttributeKey: name

@@ -10149,7 +10149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 195483507580466580, guid: bbd88cae172b0a3438f2315303612c04, type: 3}
       propertyPath: UiFold
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9114181309403652134, guid: bbd88cae172b0a3438f2315303612c04, type: 3}
       propertyPath: m_Name

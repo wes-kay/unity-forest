@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c305328e3ac9b4ebeacb5d0d1bbb77, type: 3}
   m_Name: ItemObject
   m_EditorClassIdentifier: Assembly-CSharp::SoftKitty.ItemObject
-  Hash: 5eb1ae122308dd4cde3c88f1aee17867
+  Hash: 41f20188b1b395ecf770ec4dc90fed21
   IdManager:
     idToKey:
     - id: 0
@@ -602,33 +602,13 @@ MonoBehaviour:
     consumable: 1
     visible: 1
     price: 50
-    currency: 1
+    currency: 0
     maxiumStack: 99
     upgradeLevel: 0
     weight: 0.1
     dropRates: 30
     favorite: 0
-    attributes:
-    - uid: cd
-      stringValue: false
-      floatValue: 3
-      locked: 0
-      randomChange: 100
-      isFixed: 1
-      minValue: 3
-      maxValue: 3
-      mAttributeSetting:
-        rid: -2
-    - uid: chp
-      stringValue: false
-      floatValue: 50
-      locked: 0
-      randomChange: 100
-      isFixed: 1
-      minValue: 50
-      maxValue: 50
-      mAttributeSetting:
-        rid: -2
+    attributes: []
     maximumRandomAttributes: 5
     enchantments: 
     craftMaterials: []
@@ -642,7 +622,7 @@ MonoBehaviour:
     socketingSlots: 0
     socketedItems: 
     socketingTag: []
-    fold: 1
+    fold: 0
   - uid: health_potion(l)
     name: Health Potion(L)
     description: No description yet.
@@ -3650,7 +3630,7 @@ MonoBehaviour:
   - uid: skill_1
     name: Skill test
     description: Example Skill.
-    type: 4
+    type: 0
     icon: {fileID: 2800000, guid: 358adc923ae38af41b1423425131092b, type: 3}
     iconLoadMethod: 0
     iconPath: 
@@ -3661,53 +3641,13 @@ MonoBehaviour:
     consumable: 0
     visible: 0
     price: 500
-    currency: 1
+    currency: 0
     maxiumStack: 1
     upgradeLevel: 0
     weight: 0
     dropRates: 0
     favorite: 0
-    attributes:
-    - uid: cd
-      stringValue: false
-      floatValue: 5
-      locked: 0
-      randomChange: 100
-      isFixed: 1
-      minValue: 5
-      maxValue: 5
-      mAttributeSetting:
-        rid: -2
-    - uid: dmg
-      stringValue: false
-      floatValue: 10
-      locked: 0
-      randomChange: 100
-      isFixed: 1
-      minValue: 10
-      maxValue: 10
-      mAttributeSetting:
-        rid: -2
-    - uid: delay
-      stringValue: false
-      floatValue: 0.3
-      locked: 0
-      randomChange: 100
-      isFixed: 1
-      minValue: 0.3
-      maxValue: 0.3
-      mAttributeSetting:
-        rid: -2
-    - uid: spcost
-      stringValue: false
-      floatValue: 15
-      locked: 0
-      randomChange: 100
-      isFixed: 1
-      minValue: 15
-      maxValue: 15
-      mAttributeSetting:
-        rid: -2
+    attributes: []
     maximumRandomAttributes: 5
     enchantments: 
     craftMaterials: []
@@ -3722,11 +3662,11 @@ MonoBehaviour:
     socketingSlots: 0
     socketedItems: 
     socketingTag: []
-    fold: 0
+    fold: 1
   - uid: skill_2
     name: Skill 2
     description: Example Skill.
-    type: 4
+    type: 0
     icon: {fileID: 2800000, guid: eb098d3ba4c2df84b9d82e5bed6af83c, type: 3}
     iconLoadMethod: 0
     iconPath: 
@@ -3737,53 +3677,13 @@ MonoBehaviour:
     consumable: 0
     visible: 1
     price: 500
-    currency: 1
+    currency: 0
     maxiumStack: 1
     upgradeLevel: 0
     weight: 0
     dropRates: 0
     favorite: 0
-    attributes:
-    - uid: cd
-      stringValue: false
-      floatValue: 7
-      locked: 0
-      randomChange: 100
-      isFixed: 1
-      minValue: 7
-      maxValue: 7
-      mAttributeSetting:
-        rid: -2
-    - uid: dmg
-      stringValue: false
-      floatValue: 15
-      locked: 0
-      randomChange: 100
-      isFixed: 1
-      minValue: 15
-      maxValue: 15
-      mAttributeSetting:
-        rid: -2
-    - uid: delay
-      stringValue: false
-      floatValue: 0.3
-      locked: 0
-      randomChange: 100
-      isFixed: 1
-      minValue: 0.3
-      maxValue: 0.3
-      mAttributeSetting:
-        rid: -2
-    - uid: spcost
-      stringValue: false
-      floatValue: 20
-      locked: 0
-      randomChange: 100
-      isFixed: 1
-      minValue: 20
-      maxValue: 20
-      mAttributeSetting:
-        rid: -2
+    attributes: []
     maximumRandomAttributes: 5
     enchantments: 
     craftMaterials: []
@@ -4030,7 +3930,7 @@ MonoBehaviour:
   - uid: skill_6
     name: Skill 6
     description: Example Skill.
-    type: 4
+    type: 0
     icon: {fileID: 2800000, guid: a61c35fcc4d7e424fac6acc73b9a2ce0, type: 3}
     iconLoadMethod: 0
     iconPath: 
@@ -4041,53 +3941,13 @@ MonoBehaviour:
     consumable: 0
     visible: 1
     price: 500
-    currency: 1
+    currency: 0
     maxiumStack: 1
     upgradeLevel: 0
     weight: 0
     dropRates: 0
     favorite: 0
-    attributes:
-    - uid: cd
-      stringValue: false
-      floatValue: 12
-      locked: 0
-      randomChange: 100
-      isFixed: 1
-      minValue: 12
-      maxValue: 12
-      mAttributeSetting:
-        rid: -2
-    - uid: dmg
-      stringValue: false
-      floatValue: 15
-      locked: 0
-      randomChange: 100
-      isFixed: 1
-      minValue: 15
-      maxValue: 15
-      mAttributeSetting:
-        rid: -2
-    - uid: delay
-      stringValue: false
-      floatValue: 0.3
-      locked: 0
-      randomChange: 100
-      isFixed: 1
-      minValue: 0.3
-      maxValue: 0.3
-      mAttributeSetting:
-        rid: -2
-    - uid: spcost
-      stringValue: false
-      floatValue: 20
-      locked: 0
-      randomChange: 100
-      isFixed: 1
-      minValue: 20
-      maxValue: 20
-      mAttributeSetting:
-        rid: -2
+    attributes: []
     maximumRandomAttributes: 5
     enchantments: 
     craftMaterials: []
@@ -4095,7 +3955,7 @@ MonoBehaviour:
     actions:
     - Skill_6
     tags:
-    - Mage
+    - New Tag0
     customData: []
     restrictionKey: sp
     restrictionValue: 20
@@ -4410,7 +4270,7 @@ MonoBehaviour:
   - uid: skill_11
     name: Skill 11
     description: Example Skill.
-    type: 4
+    type: 0
     icon: {fileID: 2800000, guid: d17bcc64ae8db344f98c00be712c9a5b, type: 3}
     iconLoadMethod: 0
     iconPath: 
@@ -4421,53 +4281,13 @@ MonoBehaviour:
     consumable: 0
     visible: 1
     price: 500
-    currency: 1
+    currency: 0
     maxiumStack: 1
     upgradeLevel: 0
     weight: 0
     dropRates: 0
     favorite: 0
-    attributes:
-    - uid: cd
-      stringValue: false
-      floatValue: 7
-      locked: 0
-      randomChange: 100
-      isFixed: 1
-      minValue: 7
-      maxValue: 7
-      mAttributeSetting:
-        rid: -2
-    - uid: dmg
-      stringValue: false
-      floatValue: 50
-      locked: 0
-      randomChange: 100
-      isFixed: 1
-      minValue: 50
-      maxValue: 50
-      mAttributeSetting:
-        rid: -2
-    - uid: delay
-      stringValue: false
-      floatValue: 0.3
-      locked: 0
-      randomChange: 100
-      isFixed: 1
-      minValue: 0.3
-      maxValue: 0.3
-      mAttributeSetting:
-        rid: -2
-    - uid: spcost
-      stringValue: false
-      floatValue: 50
-      locked: 0
-      randomChange: 100
-      isFixed: 1
-      minValue: 50
-      maxValue: 50
-      mAttributeSetting:
-        rid: -2
+    attributes: []
     maximumRandomAttributes: 5
     enchantments: 
     craftMaterials: []
