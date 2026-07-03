@@ -331,14 +331,14 @@ namespace Domain.MVP.Party
                 return;
             }
 
-            InventoryData inventoryData = invModule.GetInventory();
-            if (inventoryData == null)
+            // Open all inventory windows for this character (inventory, equipment, etc.)
+            foreach (var invData in invModule.Inventory)
             {
-                Debug.LogWarning($"[PartyTabView] Entity '{_selectedMemberId}' has no inventory data.");
-                return;
+                if (invData != null)
+                {
+                    invData.OpenWindow();
+                }
             }
-
-            inventoryData.OpenWindow();
         }
 
         private void OnAttributeButtonClicked()
