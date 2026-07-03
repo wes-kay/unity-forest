@@ -345,11 +345,33 @@ namespace Domain.MVP.Party
         {
             if (string.IsNullOrEmpty(_selectedMemberId))
             {
-                Debug.LogWarning("[PartyTabView] No selected member for attributes.");
+                Debug.LogWarning("[PartyTabView] No selected member for skills.");
                 return;
             }
 
-            RefreshAttributes(_selectedMemberId);
+            Entity entity = GameManager.GetEntity(_selectedMemberId);
+            if (entity == null)
+            {
+                Debug.LogWarning($"[PartyTabView] Entity '{_selectedMemberId}' not found for skills.");
+                return;
+            }
+
+            InventoryModule invModule = entity.GetModule<InventoryModule>();
+            if (invModule == null)
+            {
+                Debug.LogWarning($"[PartyTabView] Entity '{_selectedMemberId}' has no InventoryModule.");
+                return;
+            }
+
+            // Open the Skills window using the character's inventory data
+            foreach (var invData in invModule.Inventory)
+            {
+                if (invData != null)
+                {
+                    invData.OpenWindowByName("Skills", "Skills");
+                    break;
+                }
+            }
         }
 
         #endregion

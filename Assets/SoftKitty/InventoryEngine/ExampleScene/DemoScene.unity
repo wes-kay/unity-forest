@@ -9845,7 +9845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5139504305446784719, guid: 212de44d70a6b83438d63abc92500aef, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -6.21
       objectReference: {fileID: 0}
     - target: {fileID: 5139504305446784719, guid: 212de44d70a6b83438d63abc92500aef, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -10143,6 +10143,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 195483507580466580, guid: bbd88cae172b0a3438f2315303612c04, type: 3}
+      propertyPath: uid
+      value: Eirik_Hrafnsson
+      objectReference: {fileID: 0}
     - target: {fileID: 195483507580466580, guid: bbd88cae172b0a3438f2315303612c04, type: 3}
       propertyPath: UiFold
       value: 1
