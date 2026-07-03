@@ -338,7 +338,7 @@ namespace Domain.MVP.Party
                 return;
             }
 
-            WindowsManager.GetWindow("InventoryUi", inventoryData);
+            inventoryData.OpenWindow();
         }
 
         private void OnAttributeButtonClicked()
