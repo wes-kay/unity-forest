@@ -3280,4 +3280,36 @@ MonoBehaviour:
       key: rean
     - id: 233
       key: obse
+    - id: 234
+      key: lvl
+    - id: 235
+      key: atk
+    - id: 236
+      key: def
+    - id: 237
+      key: resist
+    - id: 238
+      key: sp
+    - id: 239
+      key: agi
+    - id: 240
+      key: luck
+    - id: 241
+      key: steal
+    - id: 242
+      key: cd
+    - id: 243
+      key: dmg
+    - id: 244
+      key: delay
+    - id: 245
+      key: spcost
+    - id: 246
+      key: name
+    - id: 247
+      key: xp
+    - id: 248
+      key: mxp
+    - id: 249
+      key: chp
     uiFold: 1

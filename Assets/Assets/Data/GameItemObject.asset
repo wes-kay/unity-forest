@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c305328e3ac9b4ebeacb5d0d1bbb77, type: 3}
   m_Name: GameItemObject
   m_EditorClassIdentifier: Assembly-CSharp::SoftKitty.ItemObject
-  Hash: d2ff736c5c7287a437ce31f705ccf3b4
+  Hash: f3dbd20aa664a3da6726846d0995c32d
   IdManager:
     idToKey:
     - id: 0
@@ -210,7 +210,7 @@ MonoBehaviour:
   SearchType: 0
   _skinExpand: 0
   _generalExpand: 0
-  _typeExpand: 0
+  _typeExpand: 1
   _qualityExpand: 0
   _currencyExpand: 0
   _attExpand: 0
@@ -218,11 +218,27 @@ MonoBehaviour:
   _entExpand: 0
   _craftExpand: 0
   _upgradeExpand: 0
-  _itemExpand: 1
+  _itemExpand: 0
   _socketingExpand: 0
-  _lootPackExpand: 0
+  _lootPackExpand: 1
   _newAttSel: 0
-  lootPacks: []
+  lootPacks:
+  - uid: LootPack1
+    VFX: {fileID: 0}
+    ItemPool: 5e000000
+    CurrencyMin: 00000000
+    CurrencyMax: 00000000
+    MaxiumItemCount: 1
+    MaxiumCountEachItem: 3
+    DropChanceMultiplier: 1
+    RandomLevel: 0
+    DestoryWhenPlayerCloseLootWindow: 1
+    RandomEnchantment: 0
+    EnchantmentPool: 
+    MaxiumEnhancingLevel: 10
+    fold: 1
+    currencyExpand: 0
+    itemExpand: 1
   itemTypes:
   - name: Consumable
     color: {r: 1, g: 1, b: 1, a: 1}
@@ -329,14 +345,14 @@ MonoBehaviour:
     socketingTag: []
     fold: 0
   - uid: Skill laps
-    name: Heart
+    name: Test Skill
     description: No description yet.
-    type: 0
+    type: 1
     icon: {fileID: 2800000, guid: 66995b6b61aed864daa956ae255d7fee, type: 3}
     iconLoadMethod: 0
     iconPath: 
     quality: 2
-    tradeable: 1
+    tradeable: 0
     deletable: 0
     useable: 1
     consumable: 0
@@ -354,10 +370,45 @@ MonoBehaviour:
     craftMaterials: []
     craftMaterialTags: []
     actions:
-    - Skill_1
+    - ass
     tags:
     - Warrior
-    - Skills
+    customData: []
+    restrictionKey: 
+    restrictionValue: 0
+    socketingSlots: 0
+    socketedItems: 
+    socketingTag: []
+    fold: 0
+  - uid: Item2
+    name: MainHand
+    description: No description yet.
+    type: 1
+    icon: {fileID: 2800000, guid: 66995b6b61aed864daa956ae255d7fee, type: 3}
+    iconLoadMethod: 0
+    iconPath: 
+    quality: 2
+    tradeable: 0
+    deletable: 0
+    useable: 1
+    consumable: 0
+    visible: 1
+    price: 0
+    currency: 0
+    maxiumStack: 1
+    upgradeLevel: 0
+    weight: 0.3
+    dropRates: 0
+    favorite: 0
+    attributes: []
+    maximumRandomAttributes: 5
+    enchantments: 
+    craftMaterials: []
+    craftMaterialTags: []
+    actions:
+    - ass
+    tags:
+    - MainHand
     customData: []
     restrictionKey: 
     restrictionValue: 0

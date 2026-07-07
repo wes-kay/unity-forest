@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c305328e3ac9b4ebeacb5d0d1bbb77, type: 3}
   m_Name: ItemObject
   m_EditorClassIdentifier: Assembly-CSharp::SoftKitty.ItemObject
-  Hash: 41f20188b1b395ecf770ec4dc90fed21
+  Hash: d3e13af2933cea8321057666df614441
   IdManager:
     idToKey:
     - id: 0
@@ -1766,16 +1766,6 @@ MonoBehaviour:
     dropRates: 10
     favorite: 0
     attributes:
-    - uid: atk
-      stringValue: false
-      floatValue: 10
-      locked: 0
-      randomChange: 100
-      isFixed: 0
-      minValue: 10
-      maxValue: 30
-      mAttributeSetting:
-        rid: -2
     - uid: crit
       stringValue: false
       floatValue: 2
@@ -1803,7 +1793,7 @@ MonoBehaviour:
     socketingTag:
     - Red
     - Yellow
-    fold: 0
+    fold: 1
   - uid: long_sword
     name: Long Sword
     description: Sharp sword made with copper.
@@ -3662,7 +3652,7 @@ MonoBehaviour:
     socketingSlots: 0
     socketedItems: 
     socketingTag: []
-    fold: 1
+    fold: 0
   - uid: skill_2
     name: Skill 2
     description: Example Skill.

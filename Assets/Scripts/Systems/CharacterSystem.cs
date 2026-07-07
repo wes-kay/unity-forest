@@ -20,12 +20,12 @@ public class CharacterSystemService : ICharacterSystemService, IInitializable, I
     private readonly CharacterAttributeService _characterAttributeService;
 
     public CharacterSystemService(
-        IPartyService partyService,
         ICharacterRosterService rosterService,
+        IPartyService partyService,
         CharacterAttributeService characterAttributeService)
     {
-        _partyService = partyService;
         _rosterService = rosterService;
+        _partyService = partyService;
         _characterAttributeService = characterAttributeService;
     }
 

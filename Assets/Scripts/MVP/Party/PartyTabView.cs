@@ -363,9 +363,6 @@ namespace Domain.MVP.Party
                 return;
             }
 
-            // Skills are stored as tagged items in the character's inventory.
-            // OpenWindowByName("Skills", "Skills") opens the SkillUi window which
-            // filters inventory items by the Skill tag.
             foreach (var invData in invModule.Inventory)
             {
                 if (invData != null)
