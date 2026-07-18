@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: ItemEditorAssets
   m_EditorClassIdentifier: 
   ItemAssets:
-  - uid: 4
-    icon: {fileID: 2800000, guid: 4575722772855524688e4571a34592f5, type: 3}
-  - uid: 5
-    icon: {fileID: 2800000, guid: 3bb7eb239c0c6dc42bf72bbc5ad87456, type: 3}
-  - uid: 6
-    icon: {fileID: 2800000, guid: 48aaab43a6134d24893bb1af7a555e6d, type: 3}
-  - uid: 7
-    icon: {fileID: 2800000, guid: 70e708bd41f37904eb88ac2109d9c112, type: 3}
-  - uid: 8
-    icon: {fileID: 2800000, guid: 31ab36cdbf8da244ea93fb78ba645c99, type: 3}
+  - uid: 0
+    icon: {fileID: 0}
+  - uid: 1
+    icon: {fileID: 0}
+  - uid: 93
+    icon: {fileID: 2800000, guid: 66995b6b61aed864daa956ae255d7fee, type: 3}
+  - uid: 94
+    icon: {fileID: 2800000, guid: 66995b6b61aed864daa956ae255d7fee, type: 3}
+  - uid: 95
+    icon: {fileID: 2800000, guid: 66995b6b61aed864daa956ae255d7fee, type: 3}
   - uid: 9
     icon: {fileID: 2800000, guid: 5b43a786f2cb00c4e81ccbf95e89884d, type: 3}
   - uid: 80

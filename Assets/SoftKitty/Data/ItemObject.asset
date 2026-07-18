@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c305328e3ac9b4ebeacb5d0d1bbb77, type: 3}
   m_Name: ItemObject
   m_EditorClassIdentifier: Assembly-CSharp::SoftKitty.ItemObject
-  Hash: d3e13af2933cea8321057666df614441
+  Hash: cf05d0c59d82fc868cabab2c861548ef
   IdManager:
     idToKey:
     - id: 0
@@ -622,7 +622,7 @@ MonoBehaviour:
     socketingSlots: 0
     socketedItems: 
     socketingTag: []
-    fold: 0
+    fold: 1
   - uid: health_potion(l)
     name: Health Potion(L)
     description: No description yet.
@@ -1793,7 +1793,7 @@ MonoBehaviour:
     socketingTag:
     - Red
     - Yellow
-    fold: 1
+    fold: 0
   - uid: long_sword
     name: Long Sword
     description: Sharp sword made with copper.

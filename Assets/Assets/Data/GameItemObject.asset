@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c305328e3ac9b4ebeacb5d0d1bbb77, type: 3}
   m_Name: GameItemObject
   m_EditorClassIdentifier: Assembly-CSharp::SoftKitty.ItemObject
-  Hash: f3dbd20aa664a3da6726846d0995c32d
+  Hash: b7be77bc74228fc1c65a840cc42dab0a
   IdManager:
     idToKey:
     - id: 0
@@ -205,6 +205,8 @@ MonoBehaviour:
       key: Skill laps
     - id: 94
       key: Item2
+    - id: 95
+      key: Item3
     uiFold: 0
   SearchText: 
   SearchType: 0
@@ -218,9 +220,9 @@ MonoBehaviour:
   _entExpand: 0
   _craftExpand: 0
   _upgradeExpand: 0
-  _itemExpand: 0
+  _itemExpand: 1
   _socketingExpand: 0
-  _lootPackExpand: 1
+  _lootPackExpand: 0
   _newAttSel: 0
   lootPacks:
   - uid: LootPack1
@@ -409,6 +411,41 @@ MonoBehaviour:
     - ass
     tags:
     - MainHand
+    customData: []
+    restrictionKey: 
+    restrictionValue: 0
+    socketingSlots: 0
+    socketedItems: 
+    socketingTag: []
+    fold: 0
+  - uid: Item3
+    name: seed
+    description: No description yet.
+    type: 0
+    icon: {fileID: 2800000, guid: 66995b6b61aed864daa956ae255d7fee, type: 3}
+    iconLoadMethod: 0
+    iconPath: 
+    quality: 2
+    tradeable: 0
+    deletable: 0
+    useable: 1
+    consumable: 0
+    visible: 1
+    price: 0
+    currency: 0
+    maxiumStack: 1
+    upgradeLevel: 0
+    weight: 0.3
+    dropRates: 0
+    favorite: 0
+    attributes: []
+    maximumRandomAttributes: 5
+    enchantments: 
+    craftMaterials: []
+    craftMaterialTags: []
+    actions:
+    - seeds
+    tags: []
     customData: []
     restrictionKey: 
     restrictionValue: 0
